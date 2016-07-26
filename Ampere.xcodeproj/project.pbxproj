@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5D02080E1D47E45200DD4C97 /* Ampere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0208041D47E45200DD4C97 /* Ampere.framework */; };
-		5D0208131D47E45200DD4C97 /* AmpereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0208121D47E45200DD4C97 /* AmpereTests.swift */; };
 		5D0208151D47E45200DD4C97 /* Ampere.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0208071D47E45200DD4C97 /* Ampere.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D02081F1D47E4FC00DD4C97 /* UnitProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02081E1D47E4FC00DD4C97 /* UnitProduct.swift */; };
+		5D0208251D47E74700DD4C97 /* UnitProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0208241D47E74700DD4C97 /* UnitProductTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +28,9 @@
 		5D0208071D47E45200DD4C97 /* Ampere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ampere.h; sourceTree = "<group>"; };
 		5D0208081D47E45200DD4C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D02080D1D47E45200DD4C97 /* AmpereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmpereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D0208121D47E45200DD4C97 /* AmpereTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpereTests.swift; sourceTree = "<group>"; };
 		5D0208141D47E45200DD4C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D02081E1D47E4FC00DD4C97 /* UnitProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProduct.swift; sourceTree = "<group>"; };
+		5D0208241D47E74700DD4C97 /* UnitProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProductTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				5D0208071D47E45200DD4C97 /* Ampere.h */,
 				5D0208081D47E45200DD4C97 /* Info.plist */,
+				5D02081E1D47E4FC00DD4C97 /* UnitProduct.swift */,
 			);
 			path = Ampere;
 			sourceTree = "<group>";
@@ -80,8 +83,8 @@
 		5D0208111D47E45200DD4C97 /* AmpereTests */ = {
 			isa = PBXGroup;
 			children = (
-				5D0208121D47E45200DD4C97 /* AmpereTests.swift */,
 				5D0208141D47E45200DD4C97 /* Info.plist */,
+				5D0208241D47E74700DD4C97 /* UnitProductTests.swift */,
 			);
 			path = AmpereTests;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = UQBP8YQ495;
 						DevelopmentTeamName = "Ole Begemann";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					5D02080C1D47E45200DD4C97 = {
@@ -200,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D02081F1D47E4FC00DD4C97 /* UnitProduct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D0208131D47E45200DD4C97 /* AmpereTests.swift in Sources */,
+				5D0208251D47E74700DD4C97 /* UnitProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		5D0208191D47E45200DD4C97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.olebegemann.Ampere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		5D02081A1D47E45200DD4C97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
