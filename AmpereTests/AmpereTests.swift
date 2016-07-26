@@ -1,11 +1,3 @@
-//
-//  AmpereTests.swift
-//  AmpereTests
-//
-//  Created by Ole Begemann on 26/07/16.
-//  Copyright © 2016 Ole Begemann. All rights reserved.
-//
-
 import XCTest
 @testable import Ampere
 
