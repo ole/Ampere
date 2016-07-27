@@ -8,8 +8,7 @@ class LengthDurationSpeedTests: XCTestCase {
         let time = Measurement<UnitDuration>(value: 5, unit: .seconds)
         let length: Measurement<UnitLength> = speed * time
         let expected = Measurement<UnitLength>(value: 50, unit: .meters)
-        XCTAssertTrue(length == expected)
-        XCTAssertTrue(length.unit == expected.unit)
+        AmpereTest.assertEqual(length, expected)
     }
 
     func testMultiplicationInKilometersPerHour() {
@@ -17,8 +16,7 @@ class LengthDurationSpeedTests: XCTestCase {
         let time = Measurement<UnitDuration>(value: 4.5, unit: .hours)
         let length: Measurement<UnitLength> = speed * time
         let expected = Measurement<UnitLength>(value: 99, unit: .kilometers)
-        XCTAssertTrue(length == expected)
-        XCTAssertTrue(length.unit == expected.unit)
+        AmpereTest.assertEqual(length, expected)
     }
 
     func testMultiplicationInMilesPerHour() {
@@ -26,8 +24,7 @@ class LengthDurationSpeedTests: XCTestCase {
         let time = Measurement<UnitDuration>(value: 3.5, unit: .hours)
         let length: Measurement<UnitLength> = speed * time
         let expected = Measurement<UnitLength>(value: 350, unit: .miles)
-        XCTAssertTrue(length == expected)
-        XCTAssertTrue(length.unit == expected.unit)
+        AmpereTest.assertEqual(length, expected)
     }
 
     func testMultiplicationInKnots() {
@@ -35,8 +32,7 @@ class LengthDurationSpeedTests: XCTestCase {
         let time = Measurement<UnitDuration>(value: 2, unit: .hours)
         let length: Measurement<UnitLength> = speed * time
         let expected = Measurement<UnitLength>(value: 46, unit: .nauticalMiles)
-        XCTAssertTrue(length == expected)
-        XCTAssertTrue(length.unit == expected.unit)
+        AmpereTest.assertEqual(length, expected)
     }
 
     func testDivisionByDurationInMetersPerSecond() {
@@ -44,8 +40,7 @@ class LengthDurationSpeedTests: XCTestCase {
         let time = Measurement<UnitDuration>(value: 10, unit: .seconds)
         let speed = length / time
         let expected = Measurement<UnitSpeed>(value: 10, unit: .metersPerSecond)
-        XCTAssertTrue(speed == expected)
-        XCTAssertTrue(speed.unit == expected.unit)
+        AmpereTest.assertEqual(speed, expected)
     }
 
     func testDivisionByDurationInKilometersPerHour() {
@@ -53,8 +48,7 @@ class LengthDurationSpeedTests: XCTestCase {
         let time = Measurement<UnitDuration>(value: 10, unit: .hours)
         let speed = length / time
         let expected = Measurement<UnitSpeed>(value: 10, unit: .kilometersPerHour)
-        XCTAssertTrue(speed == expected)
-        XCTAssertTrue(speed.unit == expected.unit)
+        AmpereTest.assertEqual(speed, expected)
     }
 
     func testDivisionBySpeedInMetersPerSecond() {
@@ -62,7 +56,6 @@ class LengthDurationSpeedTests: XCTestCase {
         let speed = Measurement<UnitSpeed>(value: 20, unit: .metersPerSecond)
         let time = length / speed
         let expected = Measurement<UnitDuration>(value: 5, unit: .seconds)
-        XCTAssertTrue(time == expected)
-        XCTAssertTrue(time.unit == expected.unit)
+        AmpereTest.assertEqual(time, expected)
     }
 }

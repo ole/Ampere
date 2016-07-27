@@ -12,7 +12,7 @@ class UnitProductTests: XCTestCase {
         let time = Measurement<DurationDummy>(value: 5, unit: .seconds)
         let length: Measurement<LengthDummy> = speed * time
         let expected = Measurement<LengthDummy>(value: 50, unit: .meters)
-        XCTAssertTrue(length == expected)
+        AmpereTest.assertEqual(length, expected)
     }
 
     func testMultiplicationIsCommutative() {
@@ -20,7 +20,7 @@ class UnitProductTests: XCTestCase {
         let time = Measurement<DurationDummy>(value: 5, unit: .seconds)
         let length1: Measurement<LengthDummy> = speed * time
         let length2: Measurement<LengthDummy> = time * speed
-        XCTAssertTrue(length1 == length2)
+        AmpereTest.assertEqual(length1, length2)
     }
 
     func testMultiplicationUsesPreferredUnitMapping() {
@@ -28,8 +28,7 @@ class UnitProductTests: XCTestCase {
         let time = Measurement<DurationDummy>(value: 2, unit: .hours)
         let length: Measurement<LengthDummy> = speed * time
         let expected = Measurement<LengthDummy>(value: 64, unit: .kilometers)
-        XCTAssertTrue(length == expected)
-        XCTAssertTrue(length.unit === expected.unit)
+        AmpereTest.assertEqualAndSameUnits(length, expected)
     }
 
     func testMultiplicationFallsBackToDefaultUnitMapping() {
@@ -37,9 +36,7 @@ class UnitProductTests: XCTestCase {
         let time = Measurement<DurationDummy>(value: 3600, unit: .seconds)
         let length: Measurement<LengthDummy> = speed * time
         let expected = Measurement<LengthDummy>(value: 32, unit: .kilometers)
-        // XCTAssertEqual(length, expected) would be preferable, but that assertions fails for reasons I can't explain (Xcode 8 beta 3).
-        XCTAssertTrue(length == expected)
-        XCTAssertTrue(length.unit === LengthDummy.meters)
+        AmpereTest.assertEqual(length, expected)
     }
 
     func testDivisionByFirstFactor() {
@@ -47,7 +44,7 @@ class UnitProductTests: XCTestCase {
         let speed = Measurement<SpeedDummy>(value: 10, unit: .metersPerSecond)
         let time = length / speed
         let expected = Measurement<DurationDummy>(value: 2, unit: .seconds)
-        XCTAssertTrue(time == expected)
+        AmpereTest.assertEqual(time, expected)
     }
 
     func testDivisionBySecondFactor() {
@@ -55,7 +52,7 @@ class UnitProductTests: XCTestCase {
         let time = Measurement<DurationDummy>(value: 5, unit: .seconds)
         let speed = length / time
         let expected = Measurement<SpeedDummy>(value: 4, unit: .metersPerSecond)
-        XCTAssertTrue(speed == expected)
+        AmpereTest.assertEqual(speed, expected)
     }
 
     func testDivisionByFirstFactorUsesPreferredUnitMapping() {
@@ -63,8 +60,7 @@ class UnitProductTests: XCTestCase {
         let speed = Measurement<SpeedDummy>(value: 125, unit: .kilometersPerHour)
         let time = length / speed
         let expected = Measurement<DurationDummy>(value: 4, unit: .hours)
-        XCTAssertTrue(time == expected)
-        XCTAssertTrue(time.unit === expected.unit)
+        AmpereTest.assertEqualAndSameUnits(time, expected)
     }
 
     func testDivisionBySecondFactorUsesPreferredUnitMapping() {
@@ -72,8 +68,7 @@ class UnitProductTests: XCTestCase {
         let time = Measurement<DurationDummy>(value: 5, unit: .hours)
         let speed = length / time
         let expected = Measurement<SpeedDummy>(value: 4, unit: .kilometersPerHour)
-        XCTAssertTrue(speed == expected)
-        XCTAssertTrue(speed.unit === expected.unit)
+        AmpereTest.assertEqualAndSameUnits(speed, expected)
     }
 
 }
