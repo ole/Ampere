@@ -11,6 +11,8 @@
 		5D0208151D47E45200DD4C97 /* Ampere.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0208071D47E45200DD4C97 /* Ampere.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D02081F1D47E4FC00DD4C97 /* UnitProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02081E1D47E4FC00DD4C97 /* UnitProduct.swift */; };
 		5D0208251D47E74700DD4C97 /* UnitProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0208241D47E74700DD4C97 /* UnitProductTests.swift */; };
+		5D0208541D48E4D100DD4C97 /* LengthDurationSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0208531D48E4D100DD4C97 /* LengthDurationSpeed.swift */; };
+		5D0208561D48E5E300DD4C97 /* LengthDurationSpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0208551D48E5E300DD4C97 /* LengthDurationSpeedTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		5D0208141D47E45200DD4C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D02081E1D47E4FC00DD4C97 /* UnitProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProduct.swift; sourceTree = "<group>"; };
 		5D0208241D47E74700DD4C97 /* UnitProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProductTests.swift; sourceTree = "<group>"; };
+		5D0208531D48E4D100DD4C97 /* LengthDurationSpeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LengthDurationSpeed.swift; sourceTree = "<group>"; };
+		5D0208551D48E5E300DD4C97 /* LengthDurationSpeedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LengthDurationSpeedTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			children = (
 				5D0208071D47E45200DD4C97 /* Ampere.h */,
 				5D0208081D47E45200DD4C97 /* Info.plist */,
+				5D0208531D48E4D100DD4C97 /* LengthDurationSpeed.swift */,
 				5D02081E1D47E4FC00DD4C97 /* UnitProduct.swift */,
 			);
 			path = Ampere;
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				5D0208141D47E45200DD4C97 /* Info.plist */,
+				5D0208551D48E5E300DD4C97 /* LengthDurationSpeedTests.swift */,
 				5D0208241D47E74700DD4C97 /* UnitProductTests.swift */,
 			);
 			path = AmpereTests;
@@ -205,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D02081F1D47E4FC00DD4C97 /* UnitProduct.swift in Sources */,
+				5D0208541D48E4D100DD4C97 /* LengthDurationSpeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0208251D47E74700DD4C97 /* UnitProductTests.swift in Sources */,
+				5D0208561D48E5E300DD4C97 /* LengthDurationSpeedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
