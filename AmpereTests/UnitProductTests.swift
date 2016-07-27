@@ -70,7 +70,6 @@ class UnitProductTests: XCTestCase {
         let expected = Measurement<SpeedDummy>(value: 4, unit: .kilometersPerHour)
         AmpereTest.assertEqualAndSameUnits(speed, expected)
     }
-
 }
 
 

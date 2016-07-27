@@ -58,4 +58,12 @@ class LengthDurationSpeedTests: XCTestCase {
         let expected = Measurement<UnitDuration>(value: 5, unit: .seconds)
         AmpereTest.assertEqual(time, expected)
     }
+
+    func testDivisionWithRoundingErrors() {
+        let length = Measurement<UnitLength>(value: 100_000, unit: .centimeters)
+        let time = Measurement<UnitDuration>(value: 1, unit: .hours)
+        let speed = length / time
+        let expected = Measurement<UnitSpeed>(value: 1, unit: .kilometersPerHour)
+        AmpereTest.assertEqual(speed, expected, accuracy: 0.000001)
+    }
 }
