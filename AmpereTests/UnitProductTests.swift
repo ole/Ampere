@@ -72,6 +72,22 @@ class UnitProductTests: XCTestCase {
     }
 
     func testMultiplicationWithNonProportionalUnits() {
+        let speed = Measurement<SpeedDummy>(value: 10, unit: .metersPerSecond)
+        let time = Measurement<DurationDummy>(value: 1, unit: .hours)
+        let length: Measurement<LengthDummy> = speed * time
+        let expected = Measurement<LengthDummy>(value: 3_600_000, unit: .centimeters)
+        AmpereTest.assertEqualAndSameUnits(length, expected)
+    }
+
+    func testDivisionByFirstFactorWithNonProportionalUnits() {
+        let length = Measurement<LengthDummy>(value: 100_000, unit: .centimeters)
+        let speed = Measurement<SpeedDummy>(value: 1, unit: .kilometersPerHour)
+        let time = length / speed
+        let expected = Measurement<DurationDummy>(value: 1, unit: .hours)
+        AmpereTest.assertEqualAndSameUnits(time, expected)
+    }
+
+    func testDivisionBySecondFactorWithNonProportionalUnits() {
         let length = Measurement<LengthDummy>(value: 100_000, unit: .centimeters)
         let time = Measurement<DurationDummy>(value: 1, unit: .hours)
         let speed = length / time
@@ -120,9 +136,11 @@ extension LengthDummy: UnitProduct {
     static func unitMappings() -> [(Factor1, Factor2, Product)] {
         return [
             (.kilometersPerHour, .hours, .kilometers),
-            // A "non-proportional" unit mapping, i.e. 1 km/h * 1 h != 1 cm.
+
+            // "Non-proportional" unit mappings, i.e. 1 km/h * 1 h != 1 cm.
             // The computation must be performed in the default unit mapping and then converted to the desired unit mapping for this to be correct.
-            (.kilometersPerHour, .hours, .centimeters)
+            (.kilometersPerHour, .hours, .centimeters),
+            (.metersPerSecond, .hours, .centimeters),
         ]
     }
 }
