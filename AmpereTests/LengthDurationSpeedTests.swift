@@ -16,7 +16,7 @@ class LengthDurationSpeedTests: XCTestCase {
         let time = Measurement<UnitDuration>(value: 4.5, unit: .hours)
         let length: Measurement<UnitLength> = speed * time
         let expected = Measurement<UnitLength>(value: 99, unit: .kilometers)
-        AmpereTest.assertEqual(length, expected)
+        AmpereTest.assertEqual(length, expected, accuracy: epsilon)
     }
 
     func testMultiplicationInMilesPerHour() {
@@ -24,7 +24,7 @@ class LengthDurationSpeedTests: XCTestCase {
         let time = Measurement<UnitDuration>(value: 3.5, unit: .hours)
         let length: Measurement<UnitLength> = speed * time
         let expected = Measurement<UnitLength>(value: 350, unit: .miles)
-        AmpereTest.assertEqual(length, expected)
+        AmpereTest.assertEqual(length, expected, accuracy: epsilon)
     }
 
     func testMultiplicationInKnots() {
@@ -32,7 +32,7 @@ class LengthDurationSpeedTests: XCTestCase {
         let time = Measurement<UnitDuration>(value: 2, unit: .hours)
         let length: Measurement<UnitLength> = speed * time
         let expected = Measurement<UnitLength>(value: 46, unit: .nauticalMiles)
-        AmpereTest.assertEqual(length, expected)
+        AmpereTest.assertEqual(length, expected, accuracy: epsilon)
     }
 
     func testDivisionByDurationInMetersPerSecond() {
@@ -48,7 +48,7 @@ class LengthDurationSpeedTests: XCTestCase {
         let time = Measurement<UnitDuration>(value: 10, unit: .hours)
         let speed = length / time
         let expected = Measurement<UnitSpeed>(value: 10, unit: .kilometersPerHour)
-        AmpereTest.assertEqual(speed, expected)
+        AmpereTest.assertEqual(speed, expected, accuracy: epsilon)
     }
 
     func testDivisionBySpeedInMetersPerSecond() {
@@ -57,13 +57,5 @@ class LengthDurationSpeedTests: XCTestCase {
         let time = length / speed
         let expected = Measurement<UnitDuration>(value: 5, unit: .seconds)
         AmpereTest.assertEqual(time, expected)
-    }
-
-    func testDivisionWithRoundingErrors() {
-        let length = Measurement<UnitLength>(value: 100_000, unit: .centimeters)
-        let time = Measurement<UnitDuration>(value: 1, unit: .hours)
-        let speed = length / time
-        let expected = Measurement<UnitSpeed>(value: 1, unit: .kilometersPerHour)
-        AmpereTest.assertEqual(speed, expected, accuracy: 0.000001)
     }
 }
