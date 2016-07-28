@@ -32,9 +32,14 @@ extension UnitProduct {
 }
 
 public func * <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Factor1>, rhs: Measurement<UnitType.Factor2>) -> Measurement<UnitType.Product> {
-    let (leftUnit, rightUnit, resultUnit) = UnitType.unitMapping(factor1: lhs.unit, factor2: rhs.unit)
+    // Perform the calculation in the default unit mapping
+    let (leftUnit, rightUnit, resultUnit) = UnitType.defaultUnitMapping()
     let value = lhs.converted(to: leftUnit).value * rhs.converted(to: rightUnit).value
-    return Measurement(value: value, unit: resultUnit)
+    let result = Measurement(value: value, unit: resultUnit)
+
+    // Convert to desired custom unit mapping
+    let (_, _, desiredUnit) = UnitType.unitMapping(factor1: lhs.unit, factor2: rhs.unit)
+    return result.converted(to: desiredUnit)
 }
 
 /// This would be better with a constraint like UnitType.Factor1 != UnitType.Factor2, but that doesn’t seem to be possible.
@@ -44,14 +49,24 @@ public func * <UnitType: Dimension where UnitType: UnitProduct, UnitType == Unit
 }
 
 public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Product>, rhs: Measurement<UnitType.Factor2>) -> Measurement<UnitType.Factor1> {
-    let (resultUnit, rightUnit, leftUnit) = UnitType.reverseUnitMapping(product: lhs.unit, factor2: rhs.unit)
+    // Perform the calculation in the default unit mapping
+    let (resultUnit, rightUnit, leftUnit) = UnitType.defaultUnitMapping()
     let value = lhs.converted(to: leftUnit).value / rhs.converted(to: rightUnit).value
-    return Measurement(value: value, unit: resultUnit)
+    let result = Measurement(value: value, unit: resultUnit)
+
+    // Convert to desired custom unit mapping
+    let (desiredUnit, _, _) = UnitType.reverseUnitMapping(product: lhs.unit, factor2: rhs.unit)
+    return result.converted(to: desiredUnit)
 }
 
 /// Same here: "ambiguous use of operator '/'"
 public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Product>, rhs: Measurement<UnitType.Factor1>) -> Measurement<UnitType.Factor2> {
-    let (rightUnit, resultUnit, leftUnit) = UnitType.reverseUnitMapping(product: lhs.unit, factor1: rhs.unit)
+    // Perform the calculation in the default unit mapping
+    let (rightUnit, resultUnit, leftUnit) = UnitType.defaultUnitMapping()
     let value = lhs.converted(to: leftUnit).value / rhs.converted(to: rightUnit).value
-    return Measurement(value: value, unit: resultUnit)
+    let result = Measurement(value: value, unit: resultUnit)
+
+    // Convert to desired custom unit mapping
+    let (_, desiredUnit, _) = UnitType.reverseUnitMapping(product: lhs.unit, factor1: rhs.unit)
+    return result.converted(to: desiredUnit)
 }
