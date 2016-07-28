@@ -1,5 +1,14 @@
 import Foundation
 
+/// Describes a mathematical relationship between three `Dimension` types where `Factor1` * `Factor2` = `Product`.
+///
+/// Example:
+///
+/// `UnitSpeed` * `UnitDuration` = `UnitLength`
+///
+/// Or, in the more familiar form as a fraction:
+///
+/// `UnitSpeed` = `UnitLength` / `UnitDuration`
 public protocol UnitProduct {
     associatedtype Factor1: Dimension
     associatedtype Factor2: Dimension
