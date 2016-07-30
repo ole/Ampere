@@ -26,17 +26,16 @@ extension UnitProduct {
 }
 
 extension UnitProduct {
-    // Based on the assumption that each unit has unique object identity. Otherwise this will fail.
     public static func unitMapping(factor1: Factor1, factor2: Factor2) -> (Factor1, Factor2, Product) {
-        return preferredUnitMappings().first(where: { (f1, f2, _) in f1 === factor1 && f2 === factor2 }) ?? defaultUnitMapping()
+        return preferredUnitMappings().first(where: { (f1, f2, _) in f1 == factor1 && f2 == factor2 }) ?? defaultUnitMapping()
     }
 
     public static func unitMapping(product: Product, factor2: Factor2) -> (Factor1, Factor2, Product) {
-        return preferredUnitMappings().first(where: { (_, f2, p) in p === product && f2 === factor2 }) ?? defaultUnitMapping()
+        return preferredUnitMappings().first(where: { (_, f2, p) in p == product && f2 == factor2 }) ?? defaultUnitMapping()
     }
 
     public static func unitMapping(product: Product, factor1: Factor1) -> (Factor1, Factor2, Product) {
-        return preferredUnitMappings().first(where: { (f1, _, p) in p === product && f1 === factor1 }) ?? defaultUnitMapping()
+        return preferredUnitMappings().first(where: { (f1, _, p) in p == product && f1 == factor1 }) ?? defaultUnitMapping()
     }
 }
 
