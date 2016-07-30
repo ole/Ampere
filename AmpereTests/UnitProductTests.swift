@@ -133,7 +133,7 @@ extension LengthDummy: UnitProduct {
         return (.metersPerSecond, .seconds, .meters)
     }
 
-    static func unitMappings() -> [(Factor1, Factor2, Product)] {
+    static func preferredUnitMappings() -> [(Factor1, Factor2, Product)] {
         return [
             (.kilometersPerHour, .hours, .kilometers),
 

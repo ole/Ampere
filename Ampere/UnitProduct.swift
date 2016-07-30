@@ -15,12 +15,12 @@ public protocol UnitProduct {
     associatedtype Product: Dimension
 
     static func defaultUnitMapping() -> (Factor1, Factor2, Product)
-    static func unitMappings() -> [(Factor1, Factor2, Product)]
+    static func preferredUnitMappings() -> [(Factor1, Factor2, Product)]
 }
 
 extension UnitProduct {
     // Default implementation. Implement this method in conforming types to specify additional preferred unit mappings.
-    public static func unitMappings() -> [(Factor1, Factor2, Product)] {
+    public static func preferredUnitMappings() -> [(Factor1, Factor2, Product)] {
         return []
     }
 }
@@ -28,15 +28,15 @@ extension UnitProduct {
 extension UnitProduct {
     // Based on the assumption that each unit has unique object identity. Otherwise this will fail.
     public static func unitMapping(factor1: Factor1, factor2: Factor2) -> (Factor1, Factor2, Product) {
-        return unitMappings().first(where: { (f1, f2, _) in f1 === factor1 && f2 === factor2 }) ?? defaultUnitMapping()
+        return preferredUnitMappings().first(where: { (f1, f2, _) in f1 === factor1 && f2 === factor2 }) ?? defaultUnitMapping()
     }
 
-    public static func reverseUnitMapping(product: Product, factor2: Factor2) -> (Factor1, Factor2, Product) {
-        return unitMappings().first(where: { (_, f2, p) in p === product && f2 === factor2 }) ?? defaultUnitMapping()
+    public static func unitMapping(product: Product, factor2: Factor2) -> (Factor1, Factor2, Product) {
+        return preferredUnitMappings().first(where: { (_, f2, p) in p === product && f2 === factor2 }) ?? defaultUnitMapping()
     }
 
-    public static func reverseUnitMapping(product: Product, factor1: Factor1) -> (Factor1, Factor2, Product) {
-        return unitMappings().first(where: { (f1, _, p) in p === product && f1 === factor1 }) ?? defaultUnitMapping()
+    public static func unitMapping(product: Product, factor1: Factor1) -> (Factor1, Factor2, Product) {
+        return preferredUnitMappings().first(where: { (f1, _, p) in p === product && f1 === factor1 }) ?? defaultUnitMapping()
     }
 }
 
@@ -64,7 +64,7 @@ public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == Unit
     let result = Measurement(value: value, unit: resultUnit)
 
     // Convert to desired custom unit mapping
-    let (desiredUnit, _, _) = UnitType.reverseUnitMapping(product: lhs.unit, factor2: rhs.unit)
+    let (desiredUnit, _, _) = UnitType.unitMapping(product: lhs.unit, factor2: rhs.unit)
     return result.converted(to: desiredUnit)
 }
 
@@ -76,6 +76,6 @@ public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == Unit
     let result = Measurement(value: value, unit: resultUnit)
 
     // Convert to desired custom unit mapping
-    let (_, desiredUnit, _) = UnitType.reverseUnitMapping(product: lhs.unit, factor1: rhs.unit)
+    let (_, desiredUnit, _) = UnitType.unitMapping(product: lhs.unit, factor1: rhs.unit)
     return result.converted(to: desiredUnit)
 }

@@ -10,7 +10,7 @@ extension UnitLength: UnitProduct {
         return (.metersPerSecond, .seconds, .meters)
     }
 
-    public static func unitMappings() -> [(Factor1, Factor2, Product)] {
+    public static func preferredUnitMappings() -> [(Factor1, Factor2, Product)] {
         return [
             (.kilometersPerHour, .hours, .kilometers),
             (.milesPerHour, .hours, .miles),
