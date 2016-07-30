@@ -27,15 +27,24 @@ extension UnitProduct {
 
 extension UnitProduct {
     public static func unitMapping(factor1: Factor1, factor2: Factor2) -> (Factor1, Factor2, Product) {
-        return preferredUnitMappings().first(where: { (f1, f2, _) in f1 == factor1 && f2 == factor2 }) ?? defaultUnitMapping()
+        let match = preferredUnitMappings().first { (f1, f2, _) in
+            f1 == factor1 && f2 == factor2
+        }
+        return match ?? defaultUnitMapping()
     }
 
     public static func unitMapping(product: Product, factor2: Factor2) -> (Factor1, Factor2, Product) {
-        return preferredUnitMappings().first(where: { (_, f2, p) in p == product && f2 == factor2 }) ?? defaultUnitMapping()
+        let match = preferredUnitMappings().first { (_, f2, p) in
+            p == product && f2 == factor2
+        }
+        return match ?? defaultUnitMapping()
     }
 
     public static func unitMapping(product: Product, factor1: Factor1) -> (Factor1, Factor2, Product) {
-        return preferredUnitMappings().first(where: { (f1, _, p) in p == product && f1 == factor1 }) ?? defaultUnitMapping()
+        let match = preferredUnitMappings().first { (f1, _, p) in
+            p == product && f1 == factor1
+        }
+        return match ?? defaultUnitMapping()
     }
 }
 
