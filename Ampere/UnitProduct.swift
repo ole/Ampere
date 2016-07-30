@@ -48,34 +48,38 @@ extension UnitProduct {
     }
 }
 
+/// UnitProduct.Product = Factor1 * Factor2
 public func * <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Factor1>, rhs: Measurement<UnitType.Factor2>) -> Measurement<UnitType> {
     // Perform the calculation in the default unit mapping
     let (leftUnit, rightUnit, resultUnit) = UnitType.defaultUnitMapping()
     let value = lhs.converted(to: leftUnit).value * rhs.converted(to: rightUnit).value
     let result = Measurement(value: value, unit: resultUnit)
 
-    // Convert to desired custom unit mapping
-    let (_, _, desiredUnit) = UnitType.unitMapping(factor1: lhs.unit, factor2: rhs.unit)
-    return result.converted(to: desiredUnit)
+    // Convert to preferred unit mapping
+    let (_, _, preferredUnit) = UnitType.unitMapping(factor1: lhs.unit, factor2: rhs.unit)
+    return result.converted(to: preferredUnit)
 }
 
+/// UnitProduct.Product = Factor2 * Factor1
 /// This would be better with a constraint like UnitType.Factor1 != UnitType.Factor2, but that doesn’t seem to be possible.
 /// Leads to "ambiguous use of operator *" for UnitArea.
 public func * <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Factor2>, rhs: Measurement<UnitType.Factor1>) -> Measurement<UnitType> {
     return rhs * lhs
 }
 
+/// UnitProduct / Factor2 = Factor1
 public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType>, rhs: Measurement<UnitType.Factor2>) -> Measurement<UnitType.Factor1> {
     // Perform the calculation in the default unit mapping
     let (resultUnit, rightUnit, leftUnit) = UnitType.defaultUnitMapping()
     let value = lhs.converted(to: leftUnit).value / rhs.converted(to: rightUnit).value
     let result = Measurement(value: value, unit: resultUnit)
 
-    // Convert to desired custom unit mapping
-    let (desiredUnit, _, _) = UnitType.unitMapping(product: lhs.unit, factor2: rhs.unit)
-    return result.converted(to: desiredUnit)
+    // Convert to preferred unit mapping
+    let (preferredUnit, _, _) = UnitType.unitMapping(product: lhs.unit, factor2: rhs.unit)
+    return result.converted(to: preferredUnit)
 }
 
+/// UnitProduct / Factor1 = Factor2
 /// Same here: "ambiguous use of operator '/'"
 public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType>, rhs: Measurement<UnitType.Factor1>) -> Measurement<UnitType.Factor2> {
     // Perform the calculation in the default unit mapping
@@ -83,7 +87,7 @@ public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == Unit
     let value = lhs.converted(to: leftUnit).value / rhs.converted(to: rightUnit).value
     let result = Measurement(value: value, unit: resultUnit)
 
-    // Convert to desired custom unit mapping
-    let (_, desiredUnit, _) = UnitType.unitMapping(product: lhs.unit, factor1: rhs.unit)
-    return result.converted(to: desiredUnit)
+    // Convert to preferred unit mapping
+    let (_, preferredUnit, _) = UnitType.unitMapping(product: lhs.unit, factor1: rhs.unit)
+    return result.converted(to: preferredUnit)
 }
