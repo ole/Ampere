@@ -17,6 +17,8 @@
 		5D9D6C7C1D4D1375003CB400 /* UnitSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D6C7B1D4D1375003CB400 /* UnitSquare.swift */; };
 		5D9D6C7E1D4D145E003CB400 /* AreaLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D6C7D1D4D145E003CB400 /* AreaLength.swift */; };
 		5D9D6C801D4D14BC003CB400 /* AreaLengthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D6C7F1D4D14BC003CB400 /* AreaLengthTests.swift */; };
+		5D9D6C821D4D1630003CB400 /* DivisionByItself.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D6C811D4D1630003CB400 /* DivisionByItself.swift */; };
+		5D9D6C841D4D167E003CB400 /* DivisionByItselfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D6C831D4D167E003CB400 /* DivisionByItselfTests.swift */; };
 		5DE2C5E61D49505900844AA7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2C5E51D49505900844AA7 /* Helpers.swift */; };
 		5DE2C5E81D4A184A00844AA7 /* TestGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2C5E71D4A184A00844AA7 /* TestGlobals.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +47,8 @@
 		5D9D6C7B1D4D1375003CB400 /* UnitSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSquare.swift; sourceTree = "<group>"; };
 		5D9D6C7D1D4D145E003CB400 /* AreaLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaLength.swift; sourceTree = "<group>"; };
 		5D9D6C7F1D4D14BC003CB400 /* AreaLengthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaLengthTests.swift; sourceTree = "<group>"; };
+		5D9D6C811D4D1630003CB400 /* DivisionByItself.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionByItself.swift; sourceTree = "<group>"; };
+		5D9D6C831D4D167E003CB400 /* DivisionByItselfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionByItselfTests.swift; sourceTree = "<group>"; };
 		5DE2C5E51D49505900844AA7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		5DE2C5E71D4A184A00844AA7 /* TestGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGlobals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +95,7 @@
 			children = (
 				5D0208071D47E45200DD4C97 /* Ampere.h */,
 				5D9D6C7D1D4D145E003CB400 /* AreaLength.swift */,
+				5D9D6C811D4D1630003CB400 /* DivisionByItself.swift */,
 				5D0208081D47E45200DD4C97 /* Info.plist */,
 				5D0208531D48E4D100DD4C97 /* LengthDurationSpeed.swift */,
 				5D02081E1D47E4FC00DD4C97 /* UnitProduct.swift */,
@@ -104,6 +109,7 @@
 			children = (
 				5D9D6C7F1D4D14BC003CB400 /* AreaLengthTests.swift */,
 				5D0208141D47E45200DD4C97 /* Info.plist */,
+				5D9D6C831D4D167E003CB400 /* DivisionByItselfTests.swift */,
 				5DE2C5E51D49505900844AA7 /* Helpers.swift */,
 				5D0208551D48E5E300DD4C97 /* LengthDurationSpeedTests.swift */,
 				5DE2C5E71D4A184A00844AA7 /* TestGlobals.swift */,
@@ -229,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D02081F1D47E4FC00DD4C97 /* UnitProduct.swift in Sources */,
+				5D9D6C821D4D1630003CB400 /* DivisionByItself.swift in Sources */,
 				5D9D6C7C1D4D1375003CB400 /* UnitSquare.swift in Sources */,
 				5D9D6C7E1D4D145E003CB400 /* AreaLength.swift in Sources */,
 				5D0208541D48E4D100DD4C97 /* LengthDurationSpeed.swift in Sources */,
@@ -245,6 +252,7 @@
 				5D47140F1D493DC1002AB972 /* XCTestExtensions.swift in Sources */,
 				5D0208561D48E5E300DD4C97 /* LengthDurationSpeedTests.swift in Sources */,
 				5DE2C5E61D49505900844AA7 /* Helpers.swift in Sources */,
+				5D9D6C841D4D167E003CB400 /* DivisionByItselfTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
