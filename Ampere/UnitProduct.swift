@@ -61,8 +61,6 @@ public func * <UnitType: Dimension where UnitType: UnitProduct, UnitType == Unit
 }
 
 /// UnitProduct.Product = Factor2 * Factor1
-/// This would be better with a constraint like UnitType.Factor1 != UnitType.Factor2, but that doesn’t seem to be possible.
-/// Leads to "ambiguous use of operator *" for UnitArea.
 public func * <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Factor2>, rhs: Measurement<UnitType.Factor1>) -> Measurement<UnitType> {
     return rhs * lhs
 }
@@ -80,7 +78,6 @@ public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == Unit
 }
 
 /// UnitProduct / Factor1 = Factor2
-/// Same here: "ambiguous use of operator '/'"
 public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType>, rhs: Measurement<UnitType.Factor1>) -> Measurement<UnitType.Factor2> {
     // Perform the calculation in the default unit mapping
     let (rightUnit, resultUnit, leftUnit) = UnitType.defaultUnitMapping()

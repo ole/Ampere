@@ -14,6 +14,7 @@
 		5D0208541D48E4D100DD4C97 /* LengthDurationSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0208531D48E4D100DD4C97 /* LengthDurationSpeed.swift */; };
 		5D0208561D48E5E300DD4C97 /* LengthDurationSpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0208551D48E5E300DD4C97 /* LengthDurationSpeedTests.swift */; };
 		5D47140F1D493DC1002AB972 /* XCTestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D47140E1D493DC1002AB972 /* XCTestExtensions.swift */; };
+		5D9D6C7C1D4D1375003CB400 /* UnitSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D6C7B1D4D1375003CB400 /* UnitSquare.swift */; };
 		5DE2C5E61D49505900844AA7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2C5E51D49505900844AA7 /* Helpers.swift */; };
 		5DE2C5E81D4A184A00844AA7 /* TestGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2C5E71D4A184A00844AA7 /* TestGlobals.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		5D0208531D48E4D100DD4C97 /* LengthDurationSpeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LengthDurationSpeed.swift; sourceTree = "<group>"; };
 		5D0208551D48E5E300DD4C97 /* LengthDurationSpeedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LengthDurationSpeedTests.swift; sourceTree = "<group>"; };
 		5D47140E1D493DC1002AB972 /* XCTestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestExtensions.swift; sourceTree = "<group>"; };
+		5D9D6C7B1D4D1375003CB400 /* UnitSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSquare.swift; sourceTree = "<group>"; };
 		5DE2C5E51D49505900844AA7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		5DE2C5E71D4A184A00844AA7 /* TestGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGlobals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +89,7 @@
 				5D0208081D47E45200DD4C97 /* Info.plist */,
 				5D0208531D48E4D100DD4C97 /* LengthDurationSpeed.swift */,
 				5D02081E1D47E4FC00DD4C97 /* UnitProduct.swift */,
+				5D9D6C7B1D4D1375003CB400 /* UnitSquare.swift */,
 			);
 			path = Ampere;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D02081F1D47E4FC00DD4C97 /* UnitProduct.swift in Sources */,
+				5D9D6C7C1D4D1375003CB400 /* UnitSquare.swift in Sources */,
 				5D0208541D48E4D100DD4C97 /* LengthDurationSpeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
