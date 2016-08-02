@@ -49,7 +49,7 @@ extension UnitProduct {
 }
 
 /// UnitProduct.Product = Factor1 * Factor2
-public func * <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Factor1>, rhs: Measurement<UnitType.Factor2>) -> Measurement<UnitType> {
+public func * <UnitType: UnitProduct where UnitType: Dimension, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Factor1>, rhs: Measurement<UnitType.Factor2>) -> Measurement<UnitType> {
     // Perform the calculation in the default unit mapping
     let (leftUnit, rightUnit, resultUnit) = UnitType.defaultUnitMapping()
     let value = lhs.converted(to: leftUnit).value * rhs.converted(to: rightUnit).value
@@ -61,12 +61,12 @@ public func * <UnitType: Dimension where UnitType: UnitProduct, UnitType == Unit
 }
 
 /// UnitProduct.Product = Factor2 * Factor1
-public func * <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Factor2>, rhs: Measurement<UnitType.Factor1>) -> Measurement<UnitType> {
+public func * <UnitType: UnitProduct where UnitType: Dimension, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Factor2>, rhs: Measurement<UnitType.Factor1>) -> Measurement<UnitType> {
     return rhs * lhs
 }
 
 /// UnitProduct / Factor2 = Factor1
-public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType>, rhs: Measurement<UnitType.Factor2>) -> Measurement<UnitType.Factor1> {
+public func / <UnitType: UnitProduct where UnitType: Dimension, UnitType == UnitType.Product> (lhs: Measurement<UnitType>, rhs: Measurement<UnitType.Factor2>) -> Measurement<UnitType.Factor1> {
     // Perform the calculation in the default unit mapping
     let (resultUnit, rightUnit, leftUnit) = UnitType.defaultUnitMapping()
     let value = lhs.converted(to: leftUnit).value / rhs.converted(to: rightUnit).value
@@ -78,7 +78,7 @@ public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == Unit
 }
 
 /// UnitProduct / Factor1 = Factor2
-public func / <UnitType: Dimension where UnitType: UnitProduct, UnitType == UnitType.Product> (lhs: Measurement<UnitType>, rhs: Measurement<UnitType.Factor1>) -> Measurement<UnitType.Factor2> {
+public func / <UnitType: UnitProduct where UnitType: Dimension, UnitType == UnitType.Product> (lhs: Measurement<UnitType>, rhs: Measurement<UnitType.Factor1>) -> Measurement<UnitType.Factor2> {
     // Perform the calculation in the default unit mapping
     let (rightUnit, resultUnit, leftUnit) = UnitType.defaultUnitMapping()
     let value = lhs.converted(to: leftUnit).value / rhs.converted(to: rightUnit).value
