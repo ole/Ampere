@@ -34,7 +34,7 @@ extension UnitSquare {
 }
 
 /// UnitSquare.Product = Factor * Factor
-public func * <UnitType: UnitSquare where UnitType: Dimension, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Factor>, rhs: Measurement<UnitType.Factor>) -> Measurement<UnitType> {
+public func * <UnitType: UnitSquare> (lhs: Measurement<UnitType.Factor>, rhs: Measurement<UnitType.Factor>) -> Measurement<UnitType> where UnitType: Dimension, UnitType == UnitType.Product {
     // Perform the calculation in the default unit mapping
     let (leftUnit, rightUnit, resultUnit) = UnitType.defaultUnitMapping()
     let value = lhs.converted(to: leftUnit).value * rhs.converted(to: rightUnit).value
@@ -46,7 +46,7 @@ public func * <UnitType: UnitSquare where UnitType: Dimension, UnitType == UnitT
 }
 
 /// UnitProduct / Factor = Factor
-public func / <UnitType: UnitSquare where UnitType: Dimension, UnitType == UnitType.Product> (lhs: Measurement<UnitType.Product>, rhs: Measurement<UnitType.Factor>) -> Measurement<UnitType.Factor> {
+public func / <UnitType: UnitSquare> (lhs: Measurement<UnitType.Product>, rhs: Measurement<UnitType.Factor>) -> Measurement<UnitType.Factor> where UnitType: Dimension, UnitType == UnitType.Product {
     let (resultUnit, rightUnit, leftUnit) = UnitType.defaultUnitMapping()
     let value = lhs.converted(to: leftUnit).value / rhs.converted(to: rightUnit).value
     let result = Measurement(value: value, unit: resultUnit)
