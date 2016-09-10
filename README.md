@@ -83,14 +83,14 @@ This says that the conforming type `UnitEnergy` is the product of the two associ
 
 The `defaultUnitMapping` method defines the units for the three types that should be used for computations. By returning `(.watts, .seconds, .joules)`, we say that _1 W × 1 s = 1 J_. These must be consistent so that the resulting equation is valid. We could just as well have returned `(.kilowatts, .hours, .kilowattHours)`, but something like `(.watts, .hours, .joules)` would produce wrong results.
 
-Note that Ampere expresses all relations as _products_, i.e. multiplications. If you want to express a ratio, such as _speed = length / time_, you first have to rearrange the equation into a multiplication, i.e. _length = speed × time_. This is why this particular relation is defined on `UnitLength` and not `UnitSpeed`.
+Note that Ampere expresses all relations as _products_, i.e. multiplications. If you want to express a ratio, such as _speed = length / time_, you first have to rearrange the equation into a multiplication, i.e. _length = speed × time_. This is why this particular relation is defined on `UnitLength` and not `UnitSpeed`. A separate protocol for ratios of units should not be necessary because every ratio can be transformed into an equivalent product equation.
 
 For units that are the _square_ of another units, i.e. where both factors of the product are the same type, use the `UnitSquare` protocol. An existing example of this is `UnitArea`, which is `UnitLength * UnitLength`.
 
 
 ## Limitations
 
-Currently some relations cannot be expressed due to conflicts with other definitions. As an example, consider the relation _pressure = force / area_. In Ampere, we would express this in terms of _force = pressure × area_ because all relations are expressed as multiplications — this is what the `UnitProduct` protocol does. A separate protocol for ratios of units should not be necessary because every ratio can be transformed into an equivalent product equation.
+Currently some relations cannot be expressed due to conflicts with other definitions. As an example, consider the relation _pressure = force / area_. In Ampere, we would express this in terms of _force = pressure × area_ because all relations are expressed as multiplications (see above).
 
 However, _force = pressure × area_ conflicts with the existing _force = mass × acceleration_ — `UnitForce` can only conform once to `UnitProduct` so we cannot express both of these. It could be that the only solution is to introduce a separate `UnitRatio` protocol after all, but that’s not implemented yet.
 
