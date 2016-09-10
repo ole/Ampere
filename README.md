@@ -52,7 +52,7 @@ This library currently defines the following relations:
 | -------------                  | -------------         |
 | area = length × length         | 1 m² = 1 m × 1 m      |
 | volume = area × length         | 1 m³ = 1 m² × 1 m     |
-| density = mass / volum         | 1 kg/m³ = 1 kg / 1 m³ | 
+| density = mass / volume        | 1 kg/m³ = 1 kg / 1 m³ | 
 | velocity = length / time       | 1 m/s = 1 m / 1 s     |
 | acceleration = velocity / time | 1 m/s² = 1 m/s / 1 s  |
 | energy = power × time          | 1 J = 1 W × 1 s       |
