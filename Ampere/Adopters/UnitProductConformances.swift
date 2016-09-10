@@ -91,3 +91,15 @@ extension UnitElectricCharge: UnitProduct {
         return (.amperes, .seconds, .coulombs)
     }
 }
+
+/// Force = Mass * Acceleration
+/// 1 N = 1 kg * 1 m/s²
+extension UnitForce: UnitProduct {
+    public typealias Factor1 = UnitMass
+    public typealias Factor2 = UnitAcceleration
+    public typealias Product = UnitForce
+
+    public static func defaultUnitMapping() -> (Factor1, Factor2, Product) {
+        return (.kilograms, .metersPerSecondSquared, .newtons)
+    }
+}

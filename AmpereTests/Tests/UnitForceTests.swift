@@ -25,5 +25,21 @@ class UnitForceTests: XCTestCase {
         let expected = Measurement(value: 9806.65, unit: UnitForce.newtons)
         XCTAssertEqual(kiloponds, expected)
     }
-    
+
+    func testWithBaseUnits() {
+        let factor1 = Measurement(value: 100, unit: UnitMass.kilograms)
+        let factor2 = Measurement(value: 10, unit: UnitAcceleration.metersPerSecondSquared)
+        let actual: Measurement<UnitForce> = factor1 * factor2
+        let expected = Measurement(value: 1000, unit: UnitForce.newtons)
+        AmpereTest.assertEqual(actual, expected)
+    }
+
+    func testWithNonBaseUnits() {
+        let factor1 = Measurement(value: 100, unit: UnitMass.metricTons)
+        let factor2 = Measurement(value: 1, unit: UnitAcceleration.gravity)
+        let actual: Measurement<UnitForce> = factor1 * factor2
+        let expected = Measurement(value: 981, unit: UnitForce.kiloNewtons)
+        AmpereTest.assertEqual(actual, expected)
+    }
+
 }
