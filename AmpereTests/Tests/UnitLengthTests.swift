@@ -1,7 +1,7 @@
 import Ampere
 import XCTest
 
-class LengthDurationSpeedTests: XCTestCase {
+class UnitLengthTests: XCTestCase {
     
     func testMultiplicationInMetersPerSecond() {
         let speed = Measurement<UnitSpeed>(value: 10, unit: .metersPerSecond)

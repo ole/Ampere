@@ -1,3 +1,4 @@
+/// Area = Length * Length
 extension UnitArea: UnitSquare {
     public typealias Factor = UnitLength
     public typealias Product = UnitArea

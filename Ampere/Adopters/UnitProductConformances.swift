@@ -18,3 +18,14 @@ extension UnitLength: UnitProduct {
         ]
     }
 }
+
+/// Volume = Area * Length
+extension UnitVolume: UnitProduct {
+    public typealias Factor1 = UnitArea
+    public typealias Factor2 = UnitLength
+    public typealias Product = UnitVolume
+
+    public static func defaultUnitMapping() -> (UnitArea, UnitLength, UnitVolume) {
+        return (.squareMeters, .meters, .cubicMeters)
+    }
+}

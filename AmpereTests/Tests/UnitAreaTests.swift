@@ -1,7 +1,7 @@
 import Ampere
 import XCTest
 
-class AreaLengthTests: XCTestCase {
+class UnitAreaTests: XCTestCase {
     
     func testMultiplicationWithDefaultUnits() {
         let width = Measurement(value: 4, unit: UnitLength.meters)
