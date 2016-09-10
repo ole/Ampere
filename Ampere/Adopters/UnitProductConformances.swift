@@ -73,3 +73,14 @@ extension UnitEnergy: UnitProduct {
         return (.watts, .seconds, .joules)
     }
 }
+
+/// Charge = Current * Duration
+extension UnitElectricCharge: UnitProduct {
+    public typealias Factor1 = UnitElectricCurrent
+    public typealias Factor2 = UnitDuration
+    public typealias Product = UnitElectricCharge
+
+    public static func defaultUnitMapping() -> (Factor1, Factor2, Product) {
+        return (.amperes, .seconds, .coulombs)
+    }
+}
