@@ -22,6 +22,7 @@
 		5D9822C91D84771800FB75FE /* UnitProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822C41D84771800FB75FE /* UnitProduct.swift */; };
 		5D9822CA1D84771800FB75FE /* UnitSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822C51D84771800FB75FE /* UnitSquare.swift */; };
 		5D9822D01D847B4900FB75FE /* UnitVolumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822CF1D847B4900FB75FE /* UnitVolumeTests.swift */; };
+		5D9822D21D847F3D00FB75FE /* UnitSpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822D11D847F3D00FB75FE /* UnitSpeedTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		5D9822CD1D84775D00FB75FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5D9822CE1D84787000FB75FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5D9822CF1D847B4900FB75FE /* UnitVolumeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitVolumeTests.swift; sourceTree = "<group>"; };
+		5D9822D11D847F3D00FB75FE /* UnitSpeedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSpeedTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				5D9822AC1D84761400FB75FE /* UnitProductTests.swift */,
 				5D9822A81D84761400FB75FE /* UnitAreaTests.swift */,
 				5D9822AA1D84761400FB75FE /* UnitLengthTests.swift */,
+				5D9822D11D847F3D00FB75FE /* UnitSpeedTests.swift */,
 				5D9822CF1D847B4900FB75FE /* UnitVolumeTests.swift */,
 			);
 			path = Tests;
@@ -308,6 +311,7 @@
 				5D9822AD1D84761400FB75FE /* UnitAreaTests.swift in Sources */,
 				5D9822B01D84761400FB75FE /* Globals.swift in Sources */,
 				5D9822A51D84760E00FB75FE /* Helpers.swift in Sources */,
+				5D9822D21D847F3D00FB75FE /* UnitSpeedTests.swift in Sources */,
 				5D9822D01D847B4900FB75FE /* UnitVolumeTests.swift in Sources */,
 				5D9822A61D84760E00FB75FE /* XCTestExtensions.swift in Sources */,
 				5D9822B11D84761400FB75FE /* UnitProductTests.swift in Sources */,

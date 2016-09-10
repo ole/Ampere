@@ -1,6 +1,6 @@
 import Foundation
 
-/// Length = Speed * Duration ⇔ Speed = Length / Duration
+/// Speed = Length / Duration ⇔ Length = Speed * Duration
 extension UnitLength: UnitProduct {
     public typealias Factor1 = UnitSpeed
     public typealias Factor2 = UnitDuration
@@ -25,7 +25,18 @@ extension UnitVolume: UnitProduct {
     public typealias Factor2 = UnitLength
     public typealias Product = UnitVolume
 
-    public static func defaultUnitMapping() -> (UnitArea, UnitLength, UnitVolume) {
+    public static func defaultUnitMapping() -> (Factor1, Factor2, Product) {
         return (.squareMeters, .meters, .cubicMeters)
+    }
+}
+
+/// Acceleration = Speed / Duration ⇔ Speed = Acceleration * Duration
+extension UnitSpeed: UnitProduct {
+    public typealias Factor1 = UnitAcceleration
+    public typealias Factor2 = UnitDuration
+    public typealias Product = UnitSpeed
+
+    public static func defaultUnitMapping() -> (Factor1, Factor2, Product) {
+        return (.metersPerSecondSquared, .seconds, .metersPerSecond)
     }
 }
