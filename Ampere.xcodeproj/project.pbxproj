@@ -27,6 +27,8 @@
 		5D9822D61D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822D51D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift */; };
 		5D9822DA1D84879C00FB75FE /* UnitEnergyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822D91D84879C00FB75FE /* UnitEnergyTests.swift */; };
 		5D9822DC1D8488D400FB75FE /* UnitElectricChargeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822DB1D8488D400FB75FE /* UnitElectricChargeTests.swift */; };
+		5D9822E11D848A5A00FB75FE /* UnitForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822E01D848A5A00FB75FE /* UnitForce.swift */; };
+		5D9822E31D848D8900FB75FE /* UnitForceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822E21D848D8900FB75FE /* UnitForceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		5D9822D51D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitElectricPotentialDifferenceTests.swift; sourceTree = "<group>"; };
 		5D9822D91D84879C00FB75FE /* UnitEnergyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitEnergyTests.swift; sourceTree = "<group>"; };
 		5D9822DB1D8488D400FB75FE /* UnitElectricChargeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitElectricChargeTests.swift; sourceTree = "<group>"; };
+		5D9822DE1D848A2B00FB75FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5D9822E01D848A5A00FB75FE /* UnitForce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitForce.swift; sourceTree = "<group>"; };
+		5D9822E21D848D8900FB75FE /* UnitForceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitForceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +118,7 @@
 			children = (
 				5D9822C21D84771800FB75FE /* Protocols */,
 				5D9822BF1D84771800FB75FE /* Adopters */,
+				5D9822DD1D848A1E00FB75FE /* Units */,
 				5D9822B31D84767000FB75FE /* Supporting Files */,
 			);
 			path = Ampere;
@@ -143,6 +149,7 @@
 				5D9822AB1D84761400FB75FE /* Globals.swift */,
 				5D9822A91D84761400FB75FE /* DivisionByItselfTests.swift */,
 				5D9822AC1D84761400FB75FE /* UnitProductTests.swift */,
+				5D9822E21D848D8900FB75FE /* UnitForceTests.swift */,
 				5D9822A81D84761400FB75FE /* UnitAreaTests.swift */,
 				5D9822DB1D8488D400FB75FE /* UnitElectricChargeTests.swift */,
 				5D9822D51D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift */,
@@ -191,6 +198,15 @@
 				5D9822C31D84771800FB75FE /* DivisionByItself.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5D9822DD1D848A1E00FB75FE /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				5D9822DE1D848A2B00FB75FE /* README.md */,
+				5D9822E01D848A5A00FB75FE /* UnitForce.swift */,
+			);
+			path = Units;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D9822C81D84771800FB75FE /* DivisionByItself.swift in Sources */,
+				5D9822E11D848A5A00FB75FE /* UnitForce.swift in Sources */,
 				5D9822C71D84771800FB75FE /* UnitProductConformances.swift in Sources */,
 				5D9822C91D84771800FB75FE /* UnitProduct.swift in Sources */,
 				5D9822C61D84771800FB75FE /* UnitSquareConformances.swift in Sources */,
@@ -323,6 +340,7 @@
 				5D9822AD1D84761400FB75FE /* UnitAreaTests.swift in Sources */,
 				5D9822B01D84761400FB75FE /* Globals.swift in Sources */,
 				5D9822A51D84760E00FB75FE /* Helpers.swift in Sources */,
+				5D9822E31D848D8900FB75FE /* UnitForceTests.swift in Sources */,
 				5D9822D41D8481EA00FB75FE /* UnitMassTests.swift in Sources */,
 				5D9822D21D847F3D00FB75FE /* UnitSpeedTests.swift in Sources */,
 				5D9822DC1D8488D400FB75FE /* UnitElectricChargeTests.swift in Sources */,
