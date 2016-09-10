@@ -51,3 +51,14 @@ extension UnitMass: UnitProduct {
         return (.gramsPerLiter, .liters, .grams)
     }
 }
+
+/// Resistance = Voltage / Current ⇔ Voltage = Resistance * Current
+extension UnitElectricPotentialDifference: UnitProduct {
+    public typealias Factor1 = UnitElectricResistance
+    public typealias Factor2 = UnitElectricCurrent
+    public typealias Product = UnitElectricPotentialDifference
+
+    public static func defaultUnitMapping() -> (Factor1, Factor2, Product) {
+        return (.ohms, .amperes, .volts)
+    }
+}
