@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Ampere.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D02080C1D47E45200DD4C97"
+               BuildableName = "AmpereTests.xctest"
+               BlueprintName = "AmpereTests"
+               ReferencedContainer = "container:Ampere.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
