@@ -62,3 +62,14 @@ extension UnitElectricPotentialDifference: UnitProduct {
         return (.ohms, .amperes, .volts)
     }
 }
+
+/// Energy = Power * Duration
+extension UnitEnergy: UnitProduct {
+    public typealias Factor1 = UnitPower
+    public typealias Factor2 = UnitDuration
+    public typealias Product = UnitEnergy
+
+    public static func defaultUnitMapping() -> (Factor1, Factor2, Product) {
+        return (.watts, .seconds, .joules)
+    }
+}

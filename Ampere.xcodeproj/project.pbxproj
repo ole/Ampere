@@ -25,6 +25,7 @@
 		5D9822D21D847F3D00FB75FE /* UnitSpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822D11D847F3D00FB75FE /* UnitSpeedTests.swift */; };
 		5D9822D41D8481EA00FB75FE /* UnitMassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822D31D8481EA00FB75FE /* UnitMassTests.swift */; };
 		5D9822D61D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822D51D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift */; };
+		5D9822DA1D84879C00FB75FE /* UnitEnergyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822D91D84879C00FB75FE /* UnitEnergyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		5D9822D11D847F3D00FB75FE /* UnitSpeedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSpeedTests.swift; sourceTree = "<group>"; };
 		5D9822D31D8481EA00FB75FE /* UnitMassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitMassTests.swift; sourceTree = "<group>"; };
 		5D9822D51D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitElectricPotentialDifferenceTests.swift; sourceTree = "<group>"; };
+		5D9822D91D84879C00FB75FE /* UnitEnergyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitEnergyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				5D9822AC1D84761400FB75FE /* UnitProductTests.swift */,
 				5D9822A81D84761400FB75FE /* UnitAreaTests.swift */,
 				5D9822D51D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift */,
+				5D9822D91D84879C00FB75FE /* UnitEnergyTests.swift */,
 				5D9822D31D8481EA00FB75FE /* UnitMassTests.swift */,
 				5D9822AA1D84761400FB75FE /* UnitLengthTests.swift */,
 				5D9822D11D847F3D00FB75FE /* UnitSpeedTests.swift */,
@@ -319,6 +322,7 @@
 				5D9822A51D84760E00FB75FE /* Helpers.swift in Sources */,
 				5D9822D41D8481EA00FB75FE /* UnitMassTests.swift in Sources */,
 				5D9822D21D847F3D00FB75FE /* UnitSpeedTests.swift in Sources */,
+				5D9822DA1D84879C00FB75FE /* UnitEnergyTests.swift in Sources */,
 				5D9822D01D847B4900FB75FE /* UnitVolumeTests.swift in Sources */,
 				5D9822A61D84760E00FB75FE /* XCTestExtensions.swift in Sources */,
 				5D9822B11D84761400FB75FE /* UnitProductTests.swift in Sources */,
