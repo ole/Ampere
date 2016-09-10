@@ -40,3 +40,14 @@ extension UnitSpeed: UnitProduct {
         return (.metersPerSecondSquared, .seconds, .metersPerSecond)
     }
 }
+
+/// Density = Mass / Volume ⇔ Mass = Density * Volume
+extension UnitMass: UnitProduct {
+    public typealias Factor1 = UnitConcentrationMass
+    public typealias Factor2 = UnitVolume
+    public typealias Product = UnitMass
+
+    public static func defaultUnitMapping() -> (Factor1, Factor2, Product) {
+        return (.gramsPerLiter, .liters, .grams)
+    }
+}
