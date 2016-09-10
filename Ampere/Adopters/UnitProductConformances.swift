@@ -103,3 +103,18 @@ extension UnitForce: UnitProduct {
         return (.kilograms, .metersPerSecondSquared, .newtons)
     }
 }
+
+// FIXME: This is currently not expressible because `UnitForce` already conforms to `UnitProduct` for the relation Force = Mass * Acceleration.
+// Is it necessary to introduce another protocol (like `UnitRatio`) for this?
+//
+/// Pressure = Force / Area ⇔ Force = Pressure * Area
+/// 1 Pa = 1 N / 1 m²
+//extension UnitForce: UnitProduct {
+//    public typealias Factor1 = UnitPressure
+//    public typealias Factor2 = UnitArea
+//    public typealias Product = UnitForce
+//
+//    public static func defaultUnitMapping() -> (Factor1, Factor2, Product) {
+//        return (.newtonsPerMetersSquared, .squareMeters, .newtons)
+//    }
+//}
