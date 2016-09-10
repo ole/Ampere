@@ -90,7 +90,7 @@ For units that are the _square_ of another units, i.e. where both factors of the
 
 ## Limitations
 
-Currently some relations cannot be expressed due to conflicts with other definitions. As an example, consider the relation _pressure = force / area_. In Ampere, we would express this in terms of _force = pressure × area_ because all relations are expressed as multiplications (see above).
+Currently [some relations cannot be expressed](https://github.com/ole/Ampere/issues/5) due to conflicts with other definitions. As an example, consider the relation _pressure = force / area_. In Ampere, we would express this in terms of _force = pressure × area_ because all relations are expressed as multiplications (see above).
 
 However, _force = pressure × area_ conflicts with the existing _force = mass × acceleration_ — `UnitForce` can only conform once to `UnitProduct` so we cannot express both of these. It could be that the only solution is to introduce a separate `UnitRatio` protocol after all, but that’s not implemented yet.
 
