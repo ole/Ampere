@@ -14,33 +14,35 @@ public protocol UnitProduct {
     associatedtype Factor2: Dimension
     associatedtype Product: Dimension
 
-    static func defaultUnitMapping() -> (Factor1, Factor2, Product)
-    static func preferredUnitMappings() -> [(Factor1, Factor2, Product)]
+    typealias UnitMapping = (Factor1, Factor2, Product)
+
+    static func defaultUnitMapping() -> UnitMapping
+    static func preferredUnitMappings() -> [UnitMapping]
 }
 
 extension UnitProduct {
     // Default implementation. Implement this method in conforming types to specify additional preferred unit mappings.
-    public static func preferredUnitMappings() -> [(Factor1, Factor2, Product)] {
+    public static func preferredUnitMappings() -> [UnitMapping] {
         return []
     }
 }
 
 extension UnitProduct {
-    public static func unitMapping(factor1: Factor1, factor2: Factor2) -> (Factor1, Factor2, Product) {
+    public static func unitMapping(factor1: Factor1, factor2: Factor2) -> UnitMapping {
         let match = preferredUnitMappings().first { (f1, f2, _) in
             f1 == factor1 && f2 == factor2
         }
         return match ?? defaultUnitMapping()
     }
 
-    public static func unitMapping(product: Product, factor2: Factor2) -> (Factor1, Factor2, Product) {
+    public static func unitMapping(product: Product, factor2: Factor2) -> UnitMapping {
         let match = preferredUnitMappings().first { (_, f2, p) in
             p == product && f2 == factor2
         }
         return match ?? defaultUnitMapping()
     }
 
-    public static func unitMapping(product: Product, factor1: Factor1) -> (Factor1, Factor2, Product) {
+    public static func unitMapping(product: Product, factor1: Factor1) -> UnitMapping {
         let match = preferredUnitMappings().first { (f1, _, p) in
             p == product && f1 == factor1
         }
