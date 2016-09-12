@@ -59,7 +59,7 @@
 		5D9822C31D84771800FB75FE /* DivisionByItself.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionByItself.swift; sourceTree = "<group>"; };
 		5D9822C41D84771800FB75FE /* UnitProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProduct.swift; sourceTree = "<group>"; };
 		5D9822C51D84771800FB75FE /* UnitSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSquare.swift; sourceTree = "<group>"; };
-		5D9822CB1D84773A00FB75FE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5D9822CB1D84773A00FB75FE /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5D9822CC1D84773A00FB75FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5D9822CD1D84775D00FB75FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5D9822CE1D84787000FB75FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				5D9822CC1D84773A00FB75FE /* README.md */,
-				5D9822CB1D84773A00FB75FE /* LICENSE */,
+				5D9822CB1D84773A00FB75FE /* LICENSE.txt */,
 				5D0208061D47E45200DD4C97 /* Ampere */,
 				5D0208111D47E45200DD4C97 /* AmpereTests */,
 				5D0208051D47E45200DD4C97 /* Products */,
