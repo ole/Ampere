@@ -1,4 +1,5 @@
 language: objective-c
 osx_image: xcode8
 script:
-  - xcodebuild test -scheme Ampere -sdk iphonesimulator -destination "name=iPhone 6s" | xcpretty && exit ${PIPESTATUS[0]}
+  # The pipefail option sets the exit status to the last commond with a non-zero status code, which would usually be xcodebuild
+  - set -o pipefail && xcodebuild test -scheme Ampere -sdk iphonesimulator -destination "name=iPhone 6s" | xcpretty
