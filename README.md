@@ -4,6 +4,8 @@ By [Ole Begemann][Ole Begemann], July 2016
 
 An iOS library that extends Foundation’s units and measurements APIs with type-safe multiplication and division.
 
+[![Build Status](https://travis-ci.org/ole/Ampere.svg?branch=master)](https://travis-ci.org/ole/Ampere)
+
 
 ## Examples
 
