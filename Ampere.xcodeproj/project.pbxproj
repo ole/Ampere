@@ -8,27 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		5D02080E1D47E45200DD4C97 /* Ampere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0208041D47E45200DD4C97 /* Ampere.framework */; };
-		5D0208151D47E45200DD4C97 /* Ampere.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0208071D47E45200DD4C97 /* Ampere.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D9822A51D84760E00FB75FE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822A31D84760E00FB75FE /* Helpers.swift */; };
-		5D9822A61D84760E00FB75FE /* XCTestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822A41D84760E00FB75FE /* XCTestExtensions.swift */; };
-		5D9822AD1D84761400FB75FE /* UnitAreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822A81D84761400FB75FE /* UnitAreaTests.swift */; };
-		5D9822AE1D84761400FB75FE /* DivisionByItselfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822A91D84761400FB75FE /* DivisionByItselfTests.swift */; };
-		5D9822AF1D84761400FB75FE /* UnitLengthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822AA1D84761400FB75FE /* UnitLengthTests.swift */; };
-		5D9822B01D84761400FB75FE /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822AB1D84761400FB75FE /* Globals.swift */; };
-		5D9822B11D84761400FB75FE /* UnitProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822AC1D84761400FB75FE /* UnitProductTests.swift */; };
-		5D9822C61D84771800FB75FE /* UnitSquareConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822C01D84771800FB75FE /* UnitSquareConformances.swift */; };
-		5D9822C71D84771800FB75FE /* UnitProductConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822C11D84771800FB75FE /* UnitProductConformances.swift */; };
-		5D9822C81D84771800FB75FE /* DivisionByItself.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822C31D84771800FB75FE /* DivisionByItself.swift */; };
-		5D9822C91D84771800FB75FE /* UnitProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822C41D84771800FB75FE /* UnitProduct.swift */; };
-		5D9822CA1D84771800FB75FE /* UnitSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822C51D84771800FB75FE /* UnitSquare.swift */; };
-		5D9822D01D847B4900FB75FE /* UnitVolumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822CF1D847B4900FB75FE /* UnitVolumeTests.swift */; };
-		5D9822D21D847F3D00FB75FE /* UnitSpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822D11D847F3D00FB75FE /* UnitSpeedTests.swift */; };
-		5D9822D41D8481EA00FB75FE /* UnitMassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822D31D8481EA00FB75FE /* UnitMassTests.swift */; };
-		5D9822D61D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822D51D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift */; };
-		5D9822DA1D84879C00FB75FE /* UnitEnergyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822D91D84879C00FB75FE /* UnitEnergyTests.swift */; };
-		5D9822DC1D8488D400FB75FE /* UnitElectricChargeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822DB1D8488D400FB75FE /* UnitElectricChargeTests.swift */; };
-		5D9822E11D848A5A00FB75FE /* UnitForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822E01D848A5A00FB75FE /* UnitForce.swift */; };
-		5D9822E31D848D8900FB75FE /* UnitForceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9822E21D848D8900FB75FE /* UnitForceTests.swift */; };
+		5D5A3AFE1E36722D006DD786 /* Ampere.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5A3AF61E36722D006DD786 /* Ampere.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5A3AFF1E36722D006DD786 /* DivisionByItself.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3AF71E36722D006DD786 /* DivisionByItself.swift */; };
+		5D5A3B011E36722D006DD786 /* UnitForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3AF91E36722D006DD786 /* UnitForce.swift */; };
+		5D5A3B021E36722D006DD786 /* UnitProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3AFA1E36722D006DD786 /* UnitProduct.swift */; };
+		5D5A3B031E36722D006DD786 /* UnitProductConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3AFB1E36722D006DD786 /* UnitProductConformances.swift */; };
+		5D5A3B041E36722D006DD786 /* UnitSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3AFC1E36722D006DD786 /* UnitSquare.swift */; };
+		5D5A3B051E36722D006DD786 /* UnitSquareConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3AFD1E36722D006DD786 /* UnitSquareConformances.swift */; };
+		5D5A3B281E3672B2006DD786 /* DivisionByItselfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B0A1E3672A6006DD786 /* DivisionByItselfTests.swift */; };
+		5D5A3B291E3672B2006DD786 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B0B1E3672A6006DD786 /* Globals.swift */; };
+		5D5A3B2A1E3672B2006DD786 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B0C1E3672A6006DD786 /* Helpers.swift */; };
+		5D5A3B2B1E3672B2006DD786 /* UnitAreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B0E1E3672A6006DD786 /* UnitAreaTests.swift */; };
+		5D5A3B2C1E3672B2006DD786 /* UnitElectricChargeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B0F1E3672A6006DD786 /* UnitElectricChargeTests.swift */; };
+		5D5A3B2D1E3672B2006DD786 /* UnitElectricPotentialDifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B101E3672A6006DD786 /* UnitElectricPotentialDifferenceTests.swift */; };
+		5D5A3B2E1E3672B2006DD786 /* UnitEnergyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B111E3672A6006DD786 /* UnitEnergyTests.swift */; };
+		5D5A3B2F1E3672B2006DD786 /* UnitForceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B121E3672A6006DD786 /* UnitForceTests.swift */; };
+		5D5A3B301E3672B2006DD786 /* UnitLengthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B131E3672A6006DD786 /* UnitLengthTests.swift */; };
+		5D5A3B311E3672B2006DD786 /* UnitMassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B141E3672A6006DD786 /* UnitMassTests.swift */; };
+		5D5A3B321E3672B2006DD786 /* UnitProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B151E3672A6006DD786 /* UnitProductTests.swift */; };
+		5D5A3B331E3672B2006DD786 /* UnitSpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B161E3672A6006DD786 /* UnitSpeedTests.swift */; };
+		5D5A3B341E3672B2006DD786 /* UnitVolumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B171E3672A6006DD786 /* UnitVolumeTests.swift */; };
+		5D5A3B351E3672B2006DD786 /* XCTestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5A3B181E3672A6006DD786 /* XCTestExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,35 +43,32 @@
 
 /* Begin PBXFileReference section */
 		5D0208041D47E45200DD4C97 /* Ampere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ampere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D0208071D47E45200DD4C97 /* Ampere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ampere.h; sourceTree = "<group>"; };
-		5D0208081D47E45200DD4C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D02080D1D47E45200DD4C97 /* AmpereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmpereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D0208141D47E45200DD4C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D9822A31D84760E00FB75FE /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		5D9822A41D84760E00FB75FE /* XCTestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestExtensions.swift; sourceTree = "<group>"; };
-		5D9822A81D84761400FB75FE /* UnitAreaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitAreaTests.swift; sourceTree = "<group>"; };
-		5D9822A91D84761400FB75FE /* DivisionByItselfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionByItselfTests.swift; sourceTree = "<group>"; };
-		5D9822AA1D84761400FB75FE /* UnitLengthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitLengthTests.swift; sourceTree = "<group>"; };
-		5D9822AB1D84761400FB75FE /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
-		5D9822AC1D84761400FB75FE /* UnitProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProductTests.swift; sourceTree = "<group>"; };
-		5D9822C01D84771800FB75FE /* UnitSquareConformances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSquareConformances.swift; sourceTree = "<group>"; };
-		5D9822C11D84771800FB75FE /* UnitProductConformances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProductConformances.swift; sourceTree = "<group>"; };
-		5D9822C31D84771800FB75FE /* DivisionByItself.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionByItself.swift; sourceTree = "<group>"; };
-		5D9822C41D84771800FB75FE /* UnitProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProduct.swift; sourceTree = "<group>"; };
-		5D9822C51D84771800FB75FE /* UnitSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSquare.swift; sourceTree = "<group>"; };
+		5D5A3AF61E36722D006DD786 /* Ampere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ampere.h; sourceTree = "<group>"; };
+		5D5A3AF71E36722D006DD786 /* DivisionByItself.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionByItself.swift; sourceTree = "<group>"; };
+		5D5A3AF81E36722D006DD786 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D5A3AF91E36722D006DD786 /* UnitForce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitForce.swift; sourceTree = "<group>"; };
+		5D5A3AFA1E36722D006DD786 /* UnitProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProduct.swift; sourceTree = "<group>"; };
+		5D5A3AFB1E36722D006DD786 /* UnitProductConformances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProductConformances.swift; sourceTree = "<group>"; };
+		5D5A3AFC1E36722D006DD786 /* UnitSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSquare.swift; sourceTree = "<group>"; };
+		5D5A3AFD1E36722D006DD786 /* UnitSquareConformances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSquareConformances.swift; sourceTree = "<group>"; };
+		5D5A3B0A1E3672A6006DD786 /* DivisionByItselfTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionByItselfTests.swift; sourceTree = "<group>"; };
+		5D5A3B0B1E3672A6006DD786 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		5D5A3B0C1E3672A6006DD786 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		5D5A3B0D1E3672A6006DD786 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D5A3B0E1E3672A6006DD786 /* UnitAreaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitAreaTests.swift; sourceTree = "<group>"; };
+		5D5A3B0F1E3672A6006DD786 /* UnitElectricChargeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitElectricChargeTests.swift; sourceTree = "<group>"; };
+		5D5A3B101E3672A6006DD786 /* UnitElectricPotentialDifferenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitElectricPotentialDifferenceTests.swift; sourceTree = "<group>"; };
+		5D5A3B111E3672A6006DD786 /* UnitEnergyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitEnergyTests.swift; sourceTree = "<group>"; };
+		5D5A3B121E3672A6006DD786 /* UnitForceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitForceTests.swift; sourceTree = "<group>"; };
+		5D5A3B131E3672A6006DD786 /* UnitLengthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitLengthTests.swift; sourceTree = "<group>"; };
+		5D5A3B141E3672A6006DD786 /* UnitMassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitMassTests.swift; sourceTree = "<group>"; };
+		5D5A3B151E3672A6006DD786 /* UnitProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitProductTests.swift; sourceTree = "<group>"; };
+		5D5A3B161E3672A6006DD786 /* UnitSpeedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSpeedTests.swift; sourceTree = "<group>"; };
+		5D5A3B171E3672A6006DD786 /* UnitVolumeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitVolumeTests.swift; sourceTree = "<group>"; };
+		5D5A3B181E3672A6006DD786 /* XCTestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestExtensions.swift; sourceTree = "<group>"; };
 		5D9822CB1D84773A00FB75FE /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		5D9822CC1D84773A00FB75FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5D9822CD1D84775D00FB75FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5D9822CE1D84787000FB75FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5D9822CF1D847B4900FB75FE /* UnitVolumeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitVolumeTests.swift; sourceTree = "<group>"; };
-		5D9822D11D847F3D00FB75FE /* UnitSpeedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitSpeedTests.swift; sourceTree = "<group>"; };
-		5D9822D31D8481EA00FB75FE /* UnitMassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitMassTests.swift; sourceTree = "<group>"; };
-		5D9822D51D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitElectricPotentialDifferenceTests.swift; sourceTree = "<group>"; };
-		5D9822D91D84879C00FB75FE /* UnitEnergyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitEnergyTests.swift; sourceTree = "<group>"; };
-		5D9822DB1D8488D400FB75FE /* UnitElectricChargeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitElectricChargeTests.swift; sourceTree = "<group>"; };
-		5D9822DE1D848A2B00FB75FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5D9822E01D848A5A00FB75FE /* UnitForce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitForce.swift; sourceTree = "<group>"; };
-		5D9822E21D848D8900FB75FE /* UnitForceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitForceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +93,10 @@
 		5D0207FA1D47E45200DD4C97 = {
 			isa = PBXGroup;
 			children = (
+				5D5A3AF51E36720E006DD786 /* Sources */,
+				5D5A3B061E367262006DD786 /* Tests */,
 				5D9822CC1D84773A00FB75FE /* README.md */,
 				5D9822CB1D84773A00FB75FE /* LICENSE.txt */,
-				5D0208061D47E45200DD4C97 /* Ampere */,
-				5D0208111D47E45200DD4C97 /* AmpereTests */,
 				5D0208051D47E45200DD4C97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,100 +110,49 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D0208061D47E45200DD4C97 /* Ampere */ = {
+		5D5A3AF51E36720E006DD786 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				5D9822C21D84771800FB75FE /* Protocols */,
-				5D9822BF1D84771800FB75FE /* Adopters */,
-				5D9822DD1D848A1E00FB75FE /* Units */,
-				5D9822B31D84767000FB75FE /* Supporting Files */,
+				5D5A3AF71E36722D006DD786 /* DivisionByItself.swift */,
+				5D5A3AF91E36722D006DD786 /* UnitForce.swift */,
+				5D5A3AFA1E36722D006DD786 /* UnitProduct.swift */,
+				5D5A3AFB1E36722D006DD786 /* UnitProductConformances.swift */,
+				5D5A3AFC1E36722D006DD786 /* UnitSquare.swift */,
+				5D5A3AFD1E36722D006DD786 /* UnitSquareConformances.swift */,
+				5D5A3AF61E36722D006DD786 /* Ampere.h */,
+				5D5A3AF81E36722D006DD786 /* Info.plist */,
 			);
-			path = Ampere;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		5D0208111D47E45200DD4C97 /* AmpereTests */ = {
+		5D5A3B061E367262006DD786 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5D9822A71D84761400FB75FE /* Tests */,
-				5D9822A21D84760E00FB75FE /* Helpers */,
-				5D9822B21D84765900FB75FE /* Supporting Files */,
-			);
-			path = AmpereTests;
-			sourceTree = "<group>";
-		};
-		5D9822A21D84760E00FB75FE /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				5D9822A31D84760E00FB75FE /* Helpers.swift */,
-				5D9822A41D84760E00FB75FE /* XCTestExtensions.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		5D9822A71D84761400FB75FE /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				5D9822AB1D84761400FB75FE /* Globals.swift */,
-				5D9822A91D84761400FB75FE /* DivisionByItselfTests.swift */,
-				5D9822AC1D84761400FB75FE /* UnitProductTests.swift */,
-				5D9822E21D848D8900FB75FE /* UnitForceTests.swift */,
-				5D9822A81D84761400FB75FE /* UnitAreaTests.swift */,
-				5D9822DB1D8488D400FB75FE /* UnitElectricChargeTests.swift */,
-				5D9822D51D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift */,
-				5D9822D91D84879C00FB75FE /* UnitEnergyTests.swift */,
-				5D9822D31D8481EA00FB75FE /* UnitMassTests.swift */,
-				5D9822AA1D84761400FB75FE /* UnitLengthTests.swift */,
-				5D9822D11D847F3D00FB75FE /* UnitSpeedTests.swift */,
-				5D9822CF1D847B4900FB75FE /* UnitVolumeTests.swift */,
+				5D5A3B071E367283006DD786 /* AmpereTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		5D9822B21D84765900FB75FE /* Supporting Files */ = {
+		5D5A3B071E367283006DD786 /* AmpereTests */ = {
 			isa = PBXGroup;
 			children = (
-				5D0208141D47E45200DD4C97 /* Info.plist */,
+				5D5A3B0A1E3672A6006DD786 /* DivisionByItselfTests.swift */,
+				5D5A3B0B1E3672A6006DD786 /* Globals.swift */,
+				5D5A3B0C1E3672A6006DD786 /* Helpers.swift */,
+				5D5A3B0E1E3672A6006DD786 /* UnitAreaTests.swift */,
+				5D5A3B0F1E3672A6006DD786 /* UnitElectricChargeTests.swift */,
+				5D5A3B101E3672A6006DD786 /* UnitElectricPotentialDifferenceTests.swift */,
+				5D5A3B111E3672A6006DD786 /* UnitEnergyTests.swift */,
+				5D5A3B121E3672A6006DD786 /* UnitForceTests.swift */,
+				5D5A3B131E3672A6006DD786 /* UnitLengthTests.swift */,
+				5D5A3B141E3672A6006DD786 /* UnitMassTests.swift */,
+				5D5A3B151E3672A6006DD786 /* UnitProductTests.swift */,
+				5D5A3B161E3672A6006DD786 /* UnitSpeedTests.swift */,
+				5D5A3B171E3672A6006DD786 /* UnitVolumeTests.swift */,
+				5D5A3B181E3672A6006DD786 /* XCTestExtensions.swift */,
+				5D5A3B0D1E3672A6006DD786 /* Info.plist */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5D9822B31D84767000FB75FE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5D0208071D47E45200DD4C97 /* Ampere.h */,
-				5D0208081D47E45200DD4C97 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5D9822BF1D84771800FB75FE /* Adopters */ = {
-			isa = PBXGroup;
-			children = (
-				5D9822CE1D84787000FB75FE /* README.md */,
-				5D9822C11D84771800FB75FE /* UnitProductConformances.swift */,
-				5D9822C01D84771800FB75FE /* UnitSquareConformances.swift */,
-			);
-			path = Adopters;
-			sourceTree = "<group>";
-		};
-		5D9822C21D84771800FB75FE /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				5D9822CD1D84775D00FB75FE /* README.md */,
-				5D9822C41D84771800FB75FE /* UnitProduct.swift */,
-				5D9822C51D84771800FB75FE /* UnitSquare.swift */,
-				5D9822C31D84771800FB75FE /* DivisionByItself.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		5D9822DD1D848A1E00FB75FE /* Units */ = {
-			isa = PBXGroup;
-			children = (
-				5D9822DE1D848A2B00FB75FE /* README.md */,
-				5D9822E01D848A5A00FB75FE /* UnitForce.swift */,
-			);
-			path = Units;
+			path = AmpereTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +162,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D0208151D47E45200DD4C97 /* Ampere.h in Headers */,
+				5D5A3AFE1E36722D006DD786 /* Ampere.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,12 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D9822C81D84771800FB75FE /* DivisionByItself.swift in Sources */,
-				5D9822E11D848A5A00FB75FE /* UnitForce.swift in Sources */,
-				5D9822C71D84771800FB75FE /* UnitProductConformances.swift in Sources */,
-				5D9822C91D84771800FB75FE /* UnitProduct.swift in Sources */,
-				5D9822C61D84771800FB75FE /* UnitSquareConformances.swift in Sources */,
-				5D9822CA1D84771800FB75FE /* UnitSquare.swift in Sources */,
+				5D5A3B031E36722D006DD786 /* UnitProductConformances.swift in Sources */,
+				5D5A3B011E36722D006DD786 /* UnitForce.swift in Sources */,
+				5D5A3B041E36722D006DD786 /* UnitSquare.swift in Sources */,
+				5D5A3B021E36722D006DD786 /* UnitProduct.swift in Sources */,
+				5D5A3B051E36722D006DD786 /* UnitSquareConformances.swift in Sources */,
+				5D5A3AFF1E36722D006DD786 /* DivisionByItself.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,20 +283,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D9822AD1D84761400FB75FE /* UnitAreaTests.swift in Sources */,
-				5D9822B01D84761400FB75FE /* Globals.swift in Sources */,
-				5D9822A51D84760E00FB75FE /* Helpers.swift in Sources */,
-				5D9822E31D848D8900FB75FE /* UnitForceTests.swift in Sources */,
-				5D9822D41D8481EA00FB75FE /* UnitMassTests.swift in Sources */,
-				5D9822D21D847F3D00FB75FE /* UnitSpeedTests.swift in Sources */,
-				5D9822DC1D8488D400FB75FE /* UnitElectricChargeTests.swift in Sources */,
-				5D9822DA1D84879C00FB75FE /* UnitEnergyTests.swift in Sources */,
-				5D9822D01D847B4900FB75FE /* UnitVolumeTests.swift in Sources */,
-				5D9822A61D84760E00FB75FE /* XCTestExtensions.swift in Sources */,
-				5D9822B11D84761400FB75FE /* UnitProductTests.swift in Sources */,
-				5D9822D61D84862C00FB75FE /* UnitElectricPotentialDifferenceTests.swift in Sources */,
-				5D9822AF1D84761400FB75FE /* UnitLengthTests.swift in Sources */,
-				5D9822AE1D84761400FB75FE /* DivisionByItselfTests.swift in Sources */,
+				5D5A3B331E3672B2006DD786 /* UnitSpeedTests.swift in Sources */,
+				5D5A3B311E3672B2006DD786 /* UnitMassTests.swift in Sources */,
+				5D5A3B2E1E3672B2006DD786 /* UnitEnergyTests.swift in Sources */,
+				5D5A3B321E3672B2006DD786 /* UnitProductTests.swift in Sources */,
+				5D5A3B2C1E3672B2006DD786 /* UnitElectricChargeTests.swift in Sources */,
+				5D5A3B281E3672B2006DD786 /* DivisionByItselfTests.swift in Sources */,
+				5D5A3B351E3672B2006DD786 /* XCTestExtensions.swift in Sources */,
+				5D5A3B2F1E3672B2006DD786 /* UnitForceTests.swift in Sources */,
+				5D5A3B2D1E3672B2006DD786 /* UnitElectricPotentialDifferenceTests.swift in Sources */,
+				5D5A3B2A1E3672B2006DD786 /* Helpers.swift in Sources */,
+				5D5A3B291E3672B2006DD786 /* Globals.swift in Sources */,
+				5D5A3B301E3672B2006DD786 /* UnitLengthTests.swift in Sources */,
+				5D5A3B341E3672B2006DD786 /* UnitVolumeTests.swift in Sources */,
+				5D5A3B2B1E3672B2006DD786 /* UnitAreaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +415,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Ampere/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olebegemann.Ampere;
@@ -489,7 +435,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Ampere/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olebegemann.Ampere;
@@ -502,7 +448,7 @@
 		5D02081C1D47E45200DD4C97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = AmpereTests/Info.plist;
+				INFOPLIST_FILE = Tests/AmpereTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olebegemann.AmpereTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,7 +459,7 @@
 		5D02081D1D47E45200DD4C97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = AmpereTests/Info.plist;
+				INFOPLIST_FILE = Tests/AmpereTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olebegemann.AmpereTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
