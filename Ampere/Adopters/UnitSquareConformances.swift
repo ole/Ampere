@@ -1,3 +1,5 @@
+import Foundation
+
 /// Area = Length * Length
 /// 1 m² = 1 m * 1 m
 extension UnitArea: UnitSquare {
