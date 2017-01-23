@@ -42,4 +42,14 @@ class UnitForceTests: XCTestCase {
         AmpereTest.assertEqual(actual, expected)
     }
 
+    static var allTests : [(String, (UnitForceTests) -> () throws -> Void)] {
+        return [
+            ("testBaseUnitIsNewtons", testBaseUnitIsNewtons),
+            ("testUnitsWithSameSymbolAndConverterAreEqual", testUnitsWithSameSymbolAndConverterAreEqual),
+            ("testKiloNewtons", testKiloNewtons),
+            ("testKiloponds", testKiloponds),
+            ("testWithBaseUnits", testWithBaseUnits),
+            ("testWithNonBaseUnits", testWithNonBaseUnits),
+        ]
+    }
 }

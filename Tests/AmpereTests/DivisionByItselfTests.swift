@@ -17,4 +17,10 @@ class DivisionByItselfTests: XCTestCase {
         XCTAssertEqualWithAccuracy(ratio, 26400, accuracy: 0.1)
     }
 
+    static var allTests : [(String, (DivisionByItselfTests) -> () throws -> Void)] {
+        return [
+            ("testDivisionByItselfWithTheSameUnit", testDivisionByItselfWithTheSameUnit),
+            ("testDivisionByItselfWithDifferentUnits", testDivisionByItselfWithDifferentUnits),
+        ]
+    }
 }

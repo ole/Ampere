@@ -58,4 +58,16 @@ class UnitLengthTests: XCTestCase {
         let expected = Measurement<UnitDuration>(value: 5, unit: .seconds)
         AmpereTest.assertEqual(time, expected)
     }
+
+    static var allTests : [(String, (UnitLengthTests) -> () throws -> Void)] {
+        return [
+            ("testMultiplicationInMetersPerSecond", testMultiplicationInMetersPerSecond),
+            ("testMultiplicationInKilometersPerHour", testMultiplicationInKilometersPerHour),
+            ("testMultiplicationInMilesPerHour", testMultiplicationInMilesPerHour),
+            ("testMultiplicationInKnots", testMultiplicationInKnots),
+            ("testDivisionByDurationInMetersPerSecond", testDivisionByDurationInMetersPerSecond),
+            ("testDivisionByDurationInKilometersPerHour", testDivisionByDurationInKilometersPerHour),
+            ("testDivisionBySpeedInMetersPerSecond", testDivisionBySpeedInMetersPerSecond),
+        ]
+    }
 }

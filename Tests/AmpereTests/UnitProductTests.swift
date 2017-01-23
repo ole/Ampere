@@ -94,6 +94,22 @@ class UnitProductTests: XCTestCase {
         let expected = Measurement<SpeedDummy>(value: 1, unit: .kilometersPerHour)
         AmpereTest.assertEqualAndSameUnits(speed, expected)
     }
+
+    static var allTests : [(String, (UnitProductTests) -> () throws -> Void)] {
+        return [
+            ("testMultiplicationWithDefaultUnitMapping", testMultiplicationWithDefaultUnitMapping),
+            ("testMultiplicationIsCommutative", testMultiplicationIsCommutative),
+            ("testMultiplicationUsesPreferredUnitMapping", testMultiplicationUsesPreferredUnitMapping),
+            ("testMultiplicationFallsBackToDefaultUnitMapping", testMultiplicationFallsBackToDefaultUnitMapping),
+            ("testDivisionByFirstFactor", testDivisionByFirstFactor),
+            ("testDivisionBySecondFactor", testDivisionBySecondFactor),
+            ("testDivisionByFirstFactorUsesPreferredUnitMapping", testDivisionByFirstFactorUsesPreferredUnitMapping),
+            ("testDivisionBySecondFactorUsesPreferredUnitMapping", testDivisionBySecondFactorUsesPreferredUnitMapping),
+            ("testMultiplicationWithNonProportionalUnits", testMultiplicationWithNonProportionalUnits),
+            ("testDivisionByFirstFactorWithNonProportionalUnits", testDivisionByFirstFactorWithNonProportionalUnits),
+            ("testDivisionBySecondFactorWithNonProportionalUnits", testDivisionBySecondFactorWithNonProportionalUnits),
+        ]
+    }
 }
 
 

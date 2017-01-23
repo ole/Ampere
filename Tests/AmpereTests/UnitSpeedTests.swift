@@ -19,4 +19,10 @@ class UnitSpeedTests: XCTestCase {
         AmpereTest.assertEqual(actual, expected, accuracy: epsilon)
     }
     
+    static var allTests : [(String, (UnitSpeedTests) -> () throws -> Void)] {
+        return [
+            ("testWithBaseUnits", testWithBaseUnits),
+            ("testWithNonBaseUnits", testWithNonBaseUnits),
+        ]
+    }
 }

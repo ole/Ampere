@@ -35,4 +35,12 @@ class UnitAreaTests: XCTestCase {
         AmpereTest.assertEqual(height, expected, accuracy: 0.1)
     }
 
+    static var allTests : [(String, (UnitAreaTests) -> () throws -> Void)] {
+        return [
+            ("testMultiplicationWithDefaultUnits", testMultiplicationWithDefaultUnits),
+            ("testDivisionWithDefaultUnits", testDivisionWithDefaultUnits),
+            ("testMultiplicationWithNonDefaultUnits", testMultiplicationWithNonDefaultUnits),
+            ("testDivisionWithNonDefaultUnits", testDivisionWithNonDefaultUnits),
+        ]
+    }
 }

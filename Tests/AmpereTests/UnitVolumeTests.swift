@@ -19,4 +19,10 @@ class UnitVolumeTests: XCTestCase {
         AmpereTest.assertEqual(actual, expected)
     }
 
+    static var allTests : [(String, (UnitVolumeTests) -> () throws -> Void)] {
+        return [
+            ("testWithBaseUnits", testWithBaseUnits),
+            ("testWithNonBaseUnits", testWithNonBaseUnits),
+        ]
+    }
 }

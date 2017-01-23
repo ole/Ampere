@@ -19,4 +19,10 @@ class UnitElectricPotentialDifferenceTests: XCTestCase {
         AmpereTest.assertEqual(actual, expected, accuracy: epsilon)
     }
     
+    static var allTests : [(String, (UnitElectricPotentialDifferenceTests) -> () throws -> Void)] {
+        return [
+            ("testWithBaseUnits", testWithBaseUnits),
+            ("testWithNonBaseUnits", testWithNonBaseUnits),
+        ]
+    }
 }
