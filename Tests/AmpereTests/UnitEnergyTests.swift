@@ -1,4 +1,5 @@
 import Ampere
+import Foundation
 import XCTest
 
 class UnitEnergyTests: XCTestCase {

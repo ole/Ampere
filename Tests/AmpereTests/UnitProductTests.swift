@@ -1,4 +1,5 @@
 import Ampere
+import Foundation
 import XCTest
 
 /// Tests for the base functionality of `UnitProduct`.
