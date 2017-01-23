@@ -34,10 +34,19 @@ Notice that in this case we had to explicitly specify the type of the `energy` v
 
 ## Usage
 
-The library is packaged as an Xcode project that builds an iOS Framework target. I have not (yet) set it up for CocoaPods, Carthage, or the Swift Package Manager. (Although I assume Carthage should build it out of the box.)
+The library is packaged as an Xcode project that builds an iOS Framework target. I have not (yet) set it up for CocoaPods or Carthage (although I assume Carthage should build it out of the box). The code also runs on macOS 10.12, but the Xcode project doesn’t include a macOS (or tvOS or watchOS) target yet.
 
 Clone the repository, open the project in Xcode, and check out the tests. If you want to use this in your own project in the current form, drag and drop the project file into your Xcode project and add the framework to your linked libraries, or copy the files directly into your project.
 
+### Swift Package Manager
+
+Building with the Swift Package Manager on macOS requires Swift 3.1 or later because overriding the deployment target is not supported in earlier versions ([SR-2535](https://bugs.swift.org/browse/SR-2535)).
+
+Build on macOS with:
+
+~~~sh
+swift build -Xswiftc "-target" -Xswiftc "x86_64-apple-macosx10.12"
+~~~
 
 ## Additional Units
 
