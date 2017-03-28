@@ -45,8 +45,8 @@ public func * <UnitType: UnitSquare> (lhs: Measurement<UnitType.Factor>, rhs: Me
     return result.converted(to: preferredUnit)
 }
 
-/// UnitProduct / Factor = Factor
 public func / <UnitType: UnitSquare> (lhs: Measurement<UnitType.Product>, rhs: Measurement<UnitType.Factor>) -> Measurement<UnitType.Factor> where UnitType: Dimension, UnitType == UnitType.Product {
+/// UnitSquare / Factor = Factor
     let (resultUnit, rightUnit, leftUnit) = UnitType.defaultUnitMapping()
     let value = lhs.converted(to: leftUnit).value / rhs.converted(to: rightUnit).value
     let result = Measurement(value: value, unit: resultUnit)
