@@ -3,10 +3,16 @@ matrix:
     - os: osx
       language: objective-c
       osx_image: xcode8.2
+      env:
+        - DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=10.1"
     - os: osx
       language: objective-c
       osx_image: xcode8.3
+      env:
+        - DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=10.3"
 
 script:
-  # The pipefail option sets the exit status to the last commond with a non-zero status code, which would usually be xcodebuild
-  - set -o pipefail && xcodebuild test -scheme Ampere -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 7,OS=10.1" | xcpretty
+  # Alternatively: set -o pipefail && xcodebuild ... | xcpretty
+  # The pipefail option sets the exit status to the last command with a non-zero status code, which would usually be xcodebuild.
+  # But xcpretty may also hide some logs we'd like to see.
+  - xcodebuild test -scheme Ampere -sdk iphonesimulator -destination "$DESTINATION"
