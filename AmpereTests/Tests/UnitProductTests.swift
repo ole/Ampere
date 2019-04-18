@@ -100,7 +100,7 @@ class UnitProductTests: XCTestCase {
 // MARK: - Dummy types that adopt `UnitProduct`.
 // Define some dummy `Dimension` subclasses that adopt `UnitProduct` for the tests. This way we don’t mix the base functionality tests with the actual implementations of the protocol conformance for the "real" `Unit…` types.
 
-class LengthDummy: Dimension {
+final class LengthDummy: Dimension {
     /// Base unit: meters
     override class func baseUnit() -> LengthDummy { return .meters }
     static let centimeters = LengthDummy(symbol: "cm", converter: UnitConverterLinear(coefficient: 0.01))
@@ -108,14 +108,14 @@ class LengthDummy: Dimension {
     static let kilometers = LengthDummy(symbol: "km", converter: UnitConverterLinear(coefficient: 1000))
 }
 
-class DurationDummy: Dimension {
+final class DurationDummy: Dimension {
     /// Base unit: seconds
     override class func baseUnit() -> DurationDummy { return .seconds }
     static let seconds = DurationDummy(symbol: "s", converter: UnitConverterLinear(coefficient: 1))
     static let hours = DurationDummy(symbol: "h", converter: UnitConverterLinear(coefficient: 3600))
 }
 
-class SpeedDummy: Dimension {
+final class SpeedDummy: Dimension {
     /// Base unit: meters per second
     override class func baseUnit() -> SpeedDummy { return .metersPerSecond }
     static let metersPerSecond = SpeedDummy(symbol: "m/s", converter: UnitConverterLinear(coefficient: 1))

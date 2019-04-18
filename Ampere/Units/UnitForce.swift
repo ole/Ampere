@@ -5,7 +5,7 @@ import Foundation
 /// The base unit is `newtons`.
 /// One newton is the force needed to accelerate one kilogram of mass at the rate of one metre per second squared in direction of the applied force.
 /// (1 N = 1 kg * 1 m/s²)
-public class UnitForce: Dimension {
+public final class UnitForce: Dimension {
     override public class func baseUnit() -> UnitForce {
         return .newtons
     }
