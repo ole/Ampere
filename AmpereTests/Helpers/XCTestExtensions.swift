@@ -28,7 +28,7 @@ enum AmpereTest {
                 // Compare e1's and e2's values, taking the specified accuracy into account.
                 let value1 = e1.value
                 let value2 = e2.converted(to: e1.unit).value
-                XCTAssertEqualWithAccuracy(value1, value2, accuracy: accuracy, errorMessage, file: file, line: line)
+                XCTAssertEqual(value1, value2, accuracy: accuracy, errorMessage, file: file, line: line)
             }
         } catch {
             XCTFail("AmpereAssertEqual threw an error: \(error)")
