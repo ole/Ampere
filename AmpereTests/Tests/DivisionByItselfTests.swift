@@ -14,7 +14,7 @@ class DivisionByItselfTests: XCTestCase {
         let length = Measurement(value: 10, unit: UnitLength.miles)
         let subdivision = Measurement(value: 2, unit: UnitLength.feet)
         let ratio = length / subdivision
-        XCTAssertEqualWithAccuracy(ratio, 26400, accuracy: 0.1)
+        XCTAssertEqual(ratio, 26400, accuracy: 0.1)
     }
 
 }
