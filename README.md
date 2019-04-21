@@ -7,11 +7,23 @@ An iOS library that extends Foundation’s units and measurements APIs with type
 [![Build Status](https://travis-ci.org/ole/Ampere.svg?branch=master)](https://travis-ci.org/ole/Ampere)
 
 
+## Requirements
+
+Swift 5.0 or higher.
+
+
+## Dependencies
+
+Foundation
+
+
 ## Examples
 
 To compute a velocity, we can divide length by time, i.e. `Measurement<UnitLength> / Measurement<UnitDuration>`:
 
 ~~~swift
+import Ampere
+
 let length = Measurement(value: 100, unit: UnitLength.meters)
 let time = Measurement(value: 10, unit: UnitDuration.seconds)
 let speed = length / time
@@ -21,6 +33,8 @@ let speed = length / time
 To compute energy, multiply power by time, i.e. `Measurement<UnitPower> * Measurement<UnitDuration>`:
 
 ~~~swift
+import Ampere
+
 let power = Measurement(value: 20, unit: UnitPower.kilowatts)
 let time = Measurement(value: 3, unit: UnitDuration.hours)
 let energy: Measurement<UnitEnergy> = power * time
@@ -95,11 +109,6 @@ For units that are the _square_ of another units, i.e. where both factors of the
 Currently [some relations cannot be expressed](https://github.com/ole/Ampere/issues/5) due to conflicts with other definitions. As an example, consider the relation _pressure = force / area_. In Ampere, we would express this in terms of _force = pressure × area_ because all relations are expressed as multiplications (see above).
 
 However, _force = pressure × area_ conflicts with the existing _force = mass × acceleration_ — `UnitForce` can only conform once to `UnitProduct` so we cannot express both of these. It could be that the only solution is to introduce a separate `UnitRatio` protocol after all, but that’s not implemented yet.
-
-
-## Dependencies
-
-None except Swift 3 and Foundation.
 
 
 ## More Information
