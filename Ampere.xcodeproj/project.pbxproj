@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28A85841229D2E43006F85B6 /* Ampere.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ampere.podspec; sourceTree = "<group>"; };
 		5D0208041D47E45200DD4C97 /* Ampere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ampere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0208071D47E45200DD4C97 /* Ampere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ampere.h; sourceTree = "<group>"; };
 		5D0208081D47E45200DD4C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,9 +94,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28A85840229D2DC7006F85B6 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				28A85841229D2E43006F85B6 /* Ampere.podspec */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
 		5D0207FA1D47E45200DD4C97 = {
 			isa = PBXGroup;
 			children = (
+				28A85840229D2DC7006F85B6 /* Podspec Metadata */,
 				5D9822CC1D84773A00FB75FE /* README.md */,
 				5D9822CB1D84773A00FB75FE /* LICENSE.txt */,
 				5D0208061D47E45200DD4C97 /* Ampere */,
