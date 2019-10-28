@@ -1,0 +1,10 @@
+name: macOS Continuous Integration
+on: [push]
+
+jobs:
+  build:
+    name: Run tests on macOS
+    runs-on: macOS-10.14
+    steps:
+      - uses: actions/checkout@v1
+      - run: swift test
