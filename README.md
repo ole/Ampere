@@ -1,10 +1,8 @@
 # Ampere
 
-By [Ole Begemann][Ole Begemann], July 2016
+By [Ole Begemann](https://oleb.net/), July 2016
 
-An iOS library that extends Foundation’s units and measurements APIs with type-safe multiplication and division.
-
-[![Build Status](https://travis-ci.org/ole/Ampere.svg?branch=master)](https://travis-ci.org/ole/Ampere)
+A Swift library that extends Foundation’s units and measurements APIs with type-safe multiplication and division.
 
 
 ## Requirements
@@ -14,7 +12,37 @@ Swift 5.0 or higher.
 
 ## Dependencies
 
-Foundation
+* Foundation
+* On Apple platforms, the minimum deployment targets are (I believe):
+  - iOS 10
+  - macOS 10.12
+  - tvOS 10
+  - watchOS 3
+
+
+## Usage
+
+The library is a [Swift Package Manager](https://swift.org/package-manager/) package. Add this line to your `Package.swift` file to add Ampere as a dependency:
+
+~~~swift
+let package = Package(
+    ...
+    dependencies: [
+        .package(url: "https://github.com/ole/Ampere.git", from: "0.4.0"),
+    ],
+    ...
+~~~
+
+
+In your code, import Ampere like so:
+
+~~~swift
+import Ampere
+~~~
+
+as an Xcode project that builds an iOS Framework target. I have not (yet) set it up for CocoaPods, Carthage, or the Swift Package Manager. (Although I assume Carthage should build it out of the box.)
+
+Clone the repository, open the project in Xcode, and check out the tests. If you want to use this in your own project in the current form, drag and drop the project file into your Xcode project and add the framework to your linked libraries, or copy the files directly into your project.
 
 
 ## Examples
@@ -44,13 +72,6 @@ energy.converted(to: .kilowattHours)
 ~~~
 
 Notice that in this case we had to explicitly specify the type of the `energy` variable in `let energy: Measurement<UnitEnergy>`. Sometimes the compiler cannot infer the correct type automatically and we have to help it.
-
-
-## Usage
-
-The library is packaged as an Xcode project that builds an iOS Framework target. I have not (yet) set it up for CocoaPods, Carthage, or the Swift Package Manager. (Although I assume Carthage should build it out of the box.)
-
-Clone the repository, open the project in Xcode, and check out the tests. If you want to use this in your own project in the current form, drag and drop the project file into your Xcode project and add the framework to your linked libraries, or copy the files directly into your project.
 
 
 ## Additional Units
@@ -118,9 +139,8 @@ I wrote a series of blog posts about this: [Part 1], [Part 2], [Part 3]. Part 2 
 
 ## License
 
-MIT License. See LICENSE file for details.
+MIT License. See LICENSE.txt file for details.
 
-[Ole Begemann]: http://oleb.net/
-[Part 1]: http://oleb.net/blog/2016/07/measurements-and-units/
-[Part 2]: http://oleb.net/blog/2016/07/unitproduct/
-[Part 3]: http://oleb.net/blog/2016/07/unitsquare/
+[Part 1]: https://oleb.net/blog/2016/07/measurements-and-units/
+[Part 2]: https://oleb.net/blog/2016/07/unitproduct/
+[Part 3]: https://oleb.net/blog/2016/07/unitsquare/

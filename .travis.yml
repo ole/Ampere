@@ -2,12 +2,7 @@ matrix:
   include:
     - os: osx
       language: objective-c
-      osx_image: xcode10.2
-      env:
-        - DESTINATION="platform=iOS Simulator,name=iPhone X,OS=12.2"
+      osx_image: xcode11.1
 
 script:
-  # Alternatively: set -o pipefail && xcodebuild ... | xcpretty
-  # The pipefail option sets the exit status to the last command with a non-zero status code, which would usually be xcodebuild.
-  # But xcpretty may also hide some logs we'd like to see.
-  - xcodebuild test -scheme Ampere -sdk iphonesimulator -destination "$DESTINATION"
+  - swift test
