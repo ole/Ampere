@@ -9,6 +9,10 @@ A Swift library that extends Foundation’s units and measurements APIs with typ
 
 Swift 5.0 or higher.
 
+Ampere should work both on Apple OSes and on other platforms where Swift is available (Linux, Windows).
+
+![](https://github.com/ole/Ampere/workflows/macOS/badge.svg) ![](https://github.com/ole/Ampere/workflows/Linux/badge.svg)
+
 
 ## Dependencies
 

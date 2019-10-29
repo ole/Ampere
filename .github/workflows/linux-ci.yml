@@ -1,0 +1,11 @@
+name: Linux
+on: [push]
+
+jobs:
+  linux:
+    name: Linux
+    runs-on: ubuntu-18.04
+    container: swift:5.1
+    steps:
+      - uses: actions/checkout@v1
+      - run: swift test --enable-test-discovery
