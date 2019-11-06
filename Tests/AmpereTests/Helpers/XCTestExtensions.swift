@@ -46,7 +46,7 @@ enum AmpereTest {
             let e2 = try expression2()
             assertEqual(e1, e2, accuracy: accuracy, message(), file: file, line: line)
             let messageIfUnitsNotEqual = [message(), "\"\(e1.unit.symbol)\" is not the same unit as \"\(e2.unit.symbol)\""].joined(separator: " – ", ignoreEmptyStrings: true)
-            XCTAssertTrue(e1.unit === e2.unit, messageIfUnitsNotEqual, file: file, line: line)
+            XCTAssertTrue(e1.unit == e2.unit, messageIfUnitsNotEqual, file: file, line: line)
         } catch {
             XCTFail("AmpereAssertEqualAndSameUnit threw an error: \(error)")
         }
