@@ -1,0 +1,1 @@
+fatalError("On Linux, run `swift test --enable-test-discovery`")
