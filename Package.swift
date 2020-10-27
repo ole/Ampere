@@ -15,7 +15,8 @@ let package = Package(
     targets: [
         .target(
             name: "Ampere",
-            dependencies: []),
+            dependencies: [],
+            exclude: ["Adopters/README.md", "Protocols/README.md", "Units/README.md"]),
         .testTarget(
             name: "AmpereTests",
             dependencies: ["Ampere"]),
